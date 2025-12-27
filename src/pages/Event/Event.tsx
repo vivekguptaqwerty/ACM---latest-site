@@ -22,10 +22,10 @@ import genai25Report from "../../assets/reports/Generative AI and Quantum comput
 import pixxel25Report from "../../assets/reports/PIXXELHACK webathon report 1.pdf";
 import automation25Report from "../../assets/reports/Local Iv report 1.pdf";
 import iic25Report from "../../assets/reports/IIC Report .pdf";
-import zephyr25Report from "../../assets/reports/Alumni Interaction 1.pdf";
-import ezine25Report from "../../assets/reports/Alumni Interaction 1.pdf";
+// import zephyr25Report from "../../assets/reports/Alumni Interaction 1.pdf";
+// import ezine25Report from "../../assets/reports/Alumni Interaction 1.pdf";
 import social25Report from "../../assets/reports/Social Cause Report .pdf";
-import acmSummitReport from "../../assets/reports/Alumni Interaction 1.pdf";
+// import acmSummitReport from "../../assets/reports/Alumni Interaction 1.pdf";
 
 
 
@@ -160,7 +160,7 @@ const Events = () => {
         time="25–27 September 2025"
         place="TCET Campus"
         desc="Culture + tech + food stalls — annual fest."
-        report={zephyr25Report}
+        // report={zephyr25Report}
       />
      
       <Event
@@ -189,7 +189,7 @@ const Events = () => {
         time="19 December 2025 • Full Day"
         place="NMIMS, Indore"
         desc="ACM Summit 2025 brought together students, researchers, and industry experts for insightful talks, technical sessions, and networking opportunities focused on emerging technologies and innovation."
-        report={genai25Report}
+        // report={genai25Report}
       />
     
 
