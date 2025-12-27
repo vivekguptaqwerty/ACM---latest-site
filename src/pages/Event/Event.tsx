@@ -12,6 +12,22 @@ import iic25 from "../../assets/images/IIC.png";
 import zephyr25 from "../../assets/images/zephyr.jpeg";
 import ezine25 from "../../assets/images/ezine.png";
 import social25 from "../../assets/images/Socialcause.png";
+import ACMSummit from "../../assets/images/ACMSummit.png";
+
+/* ===========================
+   REPORT IMPORTS – 2025–26
+=========================== */
+import alumni25Report from "../../assets/reports/Alumni Interaction 1.pdf";
+import genai25Report from "../../assets/reports/Generative AI and Quantum computing Report 1.pdf";
+import pixxel25Report from "../../assets/reports/PIXXELHACK webathon report 1.pdf";
+import automation25Report from "../../assets/reports/Local Iv report 1.pdf";
+import iic25Report from "../../assets/reports/IIC Report .pdf";
+import zephyr25Report from "../../assets/reports/Alumni Interaction 1.pdf";
+import ezine25Report from "../../assets/reports/Alumni Interaction 1.pdf";
+import social25Report from "../../assets/reports/Social Cause Report .pdf";
+import acmSummitReport from "../../assets/reports/Alumni Interaction 1.pdf";
+
+
 
 /* ===========================
    IMAGE IMPORTS – 2022–23
@@ -38,7 +54,7 @@ import genai24 from "../../assets/images/18.png";
 =========================== */
 import meeting24 from "../../assets/images/19.png";
 import incubation24 from "../../assets/images/20.png";
-import social24 from "../../assets/images/21.jpeg";
+import social24 from "../../assets/images/21.png";
 import devops25 from "../../assets/images/22.png";
 import alumni25b from "../../assets/images/23.png";
 import ngo25 from "../../assets/images/24.png";
@@ -90,35 +106,97 @@ const Events = () => {
           <div className="year-slides-wrap reveal">
 
             {/* ===== 2025–26 ===== */}
-            {activeYear === "2025-26" && (
-              <div className="year-slide active">
-                <div className="events-grid">
-                  <Event img={alumni25} title="Alumni Interaction" time="16 July 2025 • 2 hrs" place="TCET Auditorium"
-                    desc="A candid session where alumni shared internships, career paths and real-world advice." />
+           {/* ===== 2025–26 ===== */}
+{activeYear === "2025-26" && (
+  <div className="year-slide active">
+    <div className="events-grid">
 
-                  <Event img={genai25} title="Generative AI & Quantum Seminar" time="17 July 2025 • 2 hrs" place="TCET Auditorium"
-                    desc="Intro to generative AI workflows and quantum computing concepts." />
+      <Event
+        img={alumni25}
+        title="Alumni Interaction"
+        time="16 July 2025 • 2 hrs"
+        place="TCET Auditorium"
+        desc="A candid session where alumni shared internships, career paths and real-world advice."
+         report={alumni25Report}
+      />
 
-                  <Event img={pixxel25} title="PixxleHack Webathon" time="8 August 2025 • 48 hrs" place="Online"
-                    desc="48-hour web sprint — prototype, ship, present." />
+      <Event
+        img={genai25}
+        title="Generative AI & Quantum Seminar"
+        time="17 July 2025 • 2 hrs"
+        place="TCET Auditorium"
+        desc="Intro to generative AI workflows and quantum computing concepts."
+         report={genai25Report}
+      />
+     
+      <Event
+        img={pixxel25}
+        title="PixxleHack Webathon"
+        time="8 August 2025 • 48 hrs"
+        place="Online"
+        desc="48-hour web sprint — prototype, ship, present."
+        report={pixxel25Report}
+      />
+      
+      <Event
+        img={automation25}
+        title="Automation Expo – Industrial Visit"
+        time="13–14 August 2025"
+        place="Nesco, Goregaon"
+        desc="Hands-on exposure to automation & smart manufacturing."
+        report={automation25Report}
+      />
+      <Event
+        img={iic25}
+        title="IIC — Institute Innovation Cell"
+        time="19 September 2025"
+        place="TCET"
+        desc="Mentoring & workshops to turn ideas into projects."
+        report={iic25Report}
+      />
+      <Event
+        img={zephyr25}
+        title="Zephyr — 3 Day Fest"
+        time="25–27 September 2025"
+        place="TCET Campus"
+        desc="Culture + tech + food stalls — annual fest."
+        report={zephyr25Report}
+      />
+     
+      <Event
+        img={ezine25}
+        title="E-Magazine"
+        time="20 October 2025"
+        place="Online"
+        desc="Articles from students, faculty and alumni."
+        // report={ezine25Report}
+      />
+      
 
-                  <Event img={automation25} title="Automation Expo – Industrial Visit" time="13–14 August 2025" place="Nesco, Goregaon"
-                    desc="Hands-on exposure to automation & smart manufacturing." />
+      <Event
+        img={social25}
+        title="Social Cause — Cyber Safety Drive"
+        time="29 October 2025"
+        place="Buddha Vihar"
+        desc="Outreach teaching online safety."
+        report={social25Report}
+      />
+     
 
-                  <Event img={iic25} title="IIC — Institute Innovation Cell" time="19 September 2025" place="TCET"
-                    desc="Mentoring & workshops to turn ideas into projects." />
+      <Event
+        img={ACMSummit}
+        title="ACM Summit 2025"
+        time="19 December 2025 • Full Day"
+        place="NMIMS, Indore"
+        desc="ACM Summit 2025 brought together students, researchers, and industry experts for insightful talks, technical sessions, and networking opportunities focused on emerging technologies and innovation."
+        report={genai25Report}
+      />
+    
 
-                  <Event img={zephyr25} title="Zephyr — 3 Day Fest" time="25–27 September 2025" place="TCET Campus"
-                    desc="Culture + tech + food stalls — annual fest." />
+    </div>
+  </div>
+)}
 
-                  <Event img={ezine25} title="E-Magazine" time="20 October 2025" place="Online"
-                    desc="Articles from students, faculty and alumni." />
-
-                  <Event img={social25} title="Social Cause — Cyber Safety Drive" time="29 October 2025" place="Buddha Vihar"
-                    desc="Outreach teaching online safety." />
-                </div>
-              </div>
-            )}
 
             {/* ===== 2022–23 ===== */}
             {activeYear === "2022-23" && (
@@ -213,9 +291,10 @@ type Props = {
   time: string;
   place: string;
   desc: string;
+  report?: string;
 };
 
-const Event = ({ img, title, time, place, desc }: Props) => (
+const Event = ({ img, title, time, place, desc,report }: Props) => (
   <div className="event-card-new reveal">
     <div className="event-img">
       <img src={img} alt={title} />
@@ -229,6 +308,13 @@ const Event = ({ img, title, time, place, desc }: Props) => (
         <i className="ri-map-pin-line"></i> {place}
       </p>
       <p>{desc}</p>
+        <a
+          href={report}
+          download
+          className="event-download-btn"
+        >
+          <i className="ri-download-line"></i> Download Report
+        </a>
     </div>
   </div>
 );

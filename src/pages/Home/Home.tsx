@@ -26,7 +26,7 @@ const Home = () => {
           <div className="hero-left">
             <div className="hero-eyebrow">
               <i className="ri-global-line"></i>
-              TCET ACM Student Chapter
+              TCET ACM SIGITE Student Chapter
             </div>
 
             <h1 className="hero-title">
@@ -58,10 +58,11 @@ const Home = () => {
 
             <div className="hero-meta">
               <div className="hero-meta-item">
-                <i className="ri-group-line"></i> 200+ members
+               <b> <i className="ri-group-line"></i> 134+  Active members</b>
+                 <b><i className="ri-group-line"></i> 1155+  members</b>
               </div>
               <div className="hero-meta-item">
-                <i className="ri-macbook-line"></i> 12+ annual events
+               <b> <i className="ri-macbook-line"></i> 120+ events</b>
               </div>
             </div>
           </div>
