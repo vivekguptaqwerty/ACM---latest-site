@@ -9,10 +9,10 @@ import g5 from "../../assets/images/gallery5.jpeg";
 import g6 from "../../assets/images/gallery6.jpeg";
 
 /* Event / misc images */
-import e1 from "../../assets/images/Alumniinteraction.png";
-import e2 from "../../assets/images/AutomationExpo.png";
-import e3 from "../../assets/images/zephyr.jpeg";
-import e4 from "../../assets/images/Pixxelhack webathon 1.0.png";
+import e3 from "../../assets/images/Socialcause.png";
+import e2 from "../../assets/images/ezine.png";
+import e1 from "../../assets/images/IIC.png";
+import e4 from "../../assets/images/ACMSummit.png";
 
 
 const Home = () => {
@@ -112,6 +112,49 @@ const Home = () => {
 
         </div>
       </div>
+{/* RECENT ACTIVITIES */}
+<section id="recent-activities">
+  <div className="container reveal">
+
+    <div className="section-label">
+      <i className="ri-flashlight-line"></i> Recent Activities
+    </div>
+
+    <h2 className="section-title">
+      What’s been happening at TCET ACM recently
+    </h2>
+
+    <p className="section-subtitle">
+      A glimpse of our latest events, workshops, hackathons and campus
+      initiatives driving innovation and collaboration.
+    </p>
+
+    <div className="grid recent-activities-grid">
+
+    
+
+     
+      <div className="activity-card reveal">
+        <img src={e3} alt="Zephyr Fest" />
+        <h3>Social Cause – Cyber Safety Drive</h3>
+        <p>
+           Community outreach initiative spreading awareness about cyber safety
+    and responsible internet usage.
+        </p>
+      </div>
+
+      <div className="activity-card reveal">
+        <img src={e4} alt="PixxleHack" />
+        <h3>ACM Summit 2025</h3>
+        <p>
+          A flagship ACM summit featuring expert talks, student interactions,
+    and discussions on emerging technologies.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
       {/* ABOUT */}

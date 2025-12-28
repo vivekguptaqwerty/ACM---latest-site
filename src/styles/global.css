@@ -2883,3 +2883,44 @@
 .gallery-item:hover img {
   transform: scale(1.05);
 }
+#recent-activities {
+  padding: 5rem 0;
+}
+
+.recent-activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 2.5rem;
+}
+
+.activity-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
+}
+
+.activity-card img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.activity-card h3 {
+  margin-top: 12px;
+  font-size: 1.1rem;
+}
+
+.activity-card p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-top: 6px;
+}
+
+.activity-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}

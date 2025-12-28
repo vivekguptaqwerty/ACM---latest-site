@@ -4,6 +4,8 @@ import "../../styles/global.css";
 /* ===========================
    IMAGE IMPORTS – 2025–26
 =========================== */
+import recruitment25 from "../../assets/images/Recruitment.png";
+import membershipdrive25 from "../../assets/images/Membershipdrive.jpeg";
 import alumni25 from "../../assets/images/Alumniinteraction.png";
 import genai25 from "../../assets/images/Generative AI and Quantumn computing.png";
 import pixxel25 from "../../assets/images/Pixxelhack webathon 1.0.png";
@@ -110,7 +112,22 @@ const Events = () => {
 {activeYear === "2025-26" && (
   <div className="year-slide active">
     <div className="events-grid">
-
+       <Event
+        img={recruitment25}
+        title="Recruitment Process 2025-26"
+        time="29  May 2025 • 3 hours"
+        place="IT Staff room"
+        desc="A structured recruitment process designed to identify passionate students through interviews, tasks, and interactions to build a dynamic TCET ACM student team."
+       
+      />
+ <Event
+        img={membershipdrive25}
+        title="Membership Drive 2025-26"
+        time="7 September 2025 • 3 days"
+        place="TCET Campus"
+        desc="A campus-wide membership drive introducing students to TCET ACM, its opportunities, and the benefits of joining through interactive sessions and activities."
+       
+      />
       <Event
         img={alumni25}
         title="Alumni Interaction"

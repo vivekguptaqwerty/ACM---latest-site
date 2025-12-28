@@ -182,12 +182,12 @@ const Contact = () => {
                             {/* FAQ 1 */}
                             <div className={`faq-item ${openFAQ === 0 ? "open" : ""}`}>
                                 <button className="faq-question" onClick={() => toggleFAQ(0)}>
-                                    <span>Do I need to be a pro coder to be part of TCET ACM?</span>
+                                    <span>Why join TCET ACM?</span>
                                     <i className={`ri-${openFAQ === 0 ? "subtract" : "add"}-line`}></i>
                                 </button>
                                 {openFAQ === 0 && (
                                     <div className="faq-answer">
-                                        Not at all. Curiosity matters more than expertise.
+                                        Join TCET ACM to gain global exposure, enhance your technical skills, and connect with a community that accelerates your growth in computing and innovation.
                                     </div>
                                 )}
                             </div>
@@ -243,6 +243,8 @@ const Contact = () => {
                                     </div>
                                 )}
                             </div>
+                          
+
 
                         </div>
                     </div>

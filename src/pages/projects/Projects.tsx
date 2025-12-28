@@ -4,6 +4,7 @@ import "../../styles/global.css";
 import winner from "../../assets/images/winner.jpeg";
 import finalist from "../../assets/images/finalist.jpeg";
 import olympiad from "../../assets/images/olympiad.jpeg";
+import WinnersPixxelhack from "../../assets/images/WinnersPixxelhack.jpeg";
 
 type Project = {
   title: string;
@@ -30,6 +31,12 @@ const projects: Project[] = [
     image: olympiad,
     desc: "National-level mathematics competition achievement.",
     tags: ["Problem Solving", "Mathematics"],
+  },
+   {
+    title: "Winner of Pixxelhack Webathon",
+    image: WinnersPixxelhack,
+    desc: "Pixxelhack webathon organised by TCET ACM : Kartavya student of IT secured first position in that",
+    tags: ["Intutive Thinking", "Web development"],
   },
 ];
 
