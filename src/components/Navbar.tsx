@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "../styles/global.css";
-import acmLogo from "../assets/images/acm-logo.jpg";
+import acmLogo from "../assets/images/acm-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
