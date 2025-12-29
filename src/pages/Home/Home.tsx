@@ -116,12 +116,10 @@ const Home = () => {
 <section id="recent-activities">
   <div className="container reveal">
 
-    <div className="section-label">
-      <i className="ri-flashlight-line"></i> Recent Activities
-    </div>
+   
 
     <h2 className="section-title">
-      What’s been happening at TCET ACM recently
+      Recent Activities 
     </h2>
 
     <p className="section-subtitle">
