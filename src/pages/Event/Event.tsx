@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+
+
 import "../../styles/global.css";
 
 /* ===========================
@@ -63,7 +65,7 @@ import ngo25 from "../../assets/images/24.png";
 
 const Events = () => {
   const [activeYear, setActiveYear] = useState("2025-26");
-
+const [selectedEvent, setSelectedEvent] = useState<Props | null>(null);
   useEffect(() => {
     const preloader = document.getElementById("preloader");
     if (preloader) preloader.style.display = "none";
@@ -118,16 +120,33 @@ const Events = () => {
         time="29  May 2025 • 3 hours"
         place="IT Staff room"
         desc="A structured recruitment process designed to identify passionate students through interviews, tasks, and interactions to build a dynamic TCET ACM student team."
-       
+         onClick={() =>
+    setSelectedEvent({
+      img: membershipdrive25,
+      title: "Membership Drive 2025-26",
+      time: "7 September 2025 • 3 days",
+      place: "TCET Campus",
+      desc: "A campus-wide membership drive introducing students to TCET ACM...",
+    })
+  }
       />
- <Event
-        img={membershipdrive25}
-        title="Membership Drive 2025-26"
-        time="7 September 2025 • 3 days"
-        place="TCET Campus"
-        desc="A campus-wide membership drive introducing students to TCET ACM, its opportunities, and the benefits of joining through interactive sessions and activities."
-       
-      />
+<Event
+  img={membershipdrive25}
+  title="Membership Drive 2025-26"
+  time="7 September 2025 • 3 days"
+  place="TCET Campus"
+  desc="A campus-wide membership drive introducing students to TCET ACM..."
+  onClick={() =>
+    setSelectedEvent({
+      img: membershipdrive25,
+      title: "Membership Drive 2025-26",
+      time: "7 September 2025 • 3 days",
+      place: "TCET Campus",
+      desc: "A campus-wide membership drive introducing students to TCET ACM...",
+    })
+  }
+/>
+
       <Event
         img={alumni25}
         title="Alumni Interaction"
@@ -135,6 +154,15 @@ const Events = () => {
         place="TCET Auditorium"
         desc="A candid session where alumni shared internships, career paths and real-world advice."
          report={alumni25Report}
+          onClick={() =>
+    setSelectedEvent({
+      img: membershipdrive25,
+      title: "Membership Drive 2025-26",
+      time: "7 September 2025 • 3 days",
+      place: "TCET Campus",
+      desc: "A campus-wide membership drive introducing students to TCET ACM...",
+    })
+  }
       />
 
       <Event
@@ -144,6 +172,15 @@ const Events = () => {
         place="TCET Auditorium"
         desc="Intro to generative AI workflows and quantum computing concepts."
          report={genai25Report}
+          onClick={() =>
+    setSelectedEvent({
+      img: membershipdrive25,
+      title: "Membership Drive 2025-26",
+      time: "7 September 2025 • 3 days",
+      place: "TCET Campus",
+      desc: "A campus-wide membership drive introducing students to TCET ACM...",
+    })
+  }
       />
      
       <Event
@@ -153,6 +190,15 @@ const Events = () => {
         place="Online"
         desc="48-hour web sprint — prototype, ship, present."
         report={pixxel25Report}
+         onClick={() =>
+    setSelectedEvent({
+      img: membershipdrive25,
+      title: "Membership Drive 2025-26",
+      time: "7 September 2025 • 3 days",
+      place: "TCET Campus",
+      desc: "A campus-wide membership drive introducing students to TCET ACM...",
+    })
+  }
       />
       
       <Event
@@ -162,6 +208,15 @@ const Events = () => {
         place="Nesco, Goregaon"
         desc="Hands-on exposure to automation & smart manufacturing."
         report={automation25Report}
+         onClick={() =>
+    setSelectedEvent({
+      img: membershipdrive25,
+      title: "Membership Drive 2025-26",
+      time: "7 September 2025 • 3 days",
+      place: "TCET Campus",
+      desc: "A campus-wide membership drive introducing students to TCET ACM...",
+    })
+  }
       />
       <Event
         img={iic25}
@@ -170,6 +225,15 @@ const Events = () => {
         place="TCET"
         desc="Mentoring & workshops to turn ideas into projects."
         report={iic25Report}
+         onClick={() =>
+    setSelectedEvent({
+      img: membershipdrive25,
+      title: "Membership Drive 2025-26",
+      time: "7 September 2025 • 3 days",
+      place: "TCET Campus",
+      desc: "A campus-wide membership drive introducing students to TCET ACM...",
+    })
+  }
       />
       <Event
         img={zephyr25}
@@ -178,6 +242,15 @@ const Events = () => {
         place="TCET Campus"
         desc="Culture + tech + food stalls — annual fest."
         // report={zephyr25Report}
+         onClick={() =>
+    setSelectedEvent({
+      img: membershipdrive25,
+      title: "Membership Drive 2025-26",
+      time: "7 September 2025 • 3 days",
+      place: "TCET Campus",
+      desc: "A campus-wide membership drive introducing students to TCET ACM...",
+    })
+  }
       />
      
       <Event
@@ -187,6 +260,15 @@ const Events = () => {
         place="Online"
         desc="Articles from students, faculty and alumni."
         // report={ezine25Report}
+         onClick={() =>
+    setSelectedEvent({
+      img: membershipdrive25,
+      title: "Membership Drive 2025-26",
+      time: "7 September 2025 • 3 days",
+      place: "TCET Campus",
+      desc: "A campus-wide membership drive introducing students to TCET ACM...",
+    })
+  }
       />
       
 
@@ -197,6 +279,15 @@ const Events = () => {
         place="Buddha Vihar"
         desc="Outreach teaching online safety."
         report={social25Report}
+         onClick={() =>
+    setSelectedEvent({
+      img: membershipdrive25,
+      title: "Membership Drive 2025-26",
+      time: "7 September 2025 • 3 days",
+      place: "TCET Campus",
+      desc: "A campus-wide membership drive introducing students to TCET ACM...",
+    })
+  }
       />
      
 
@@ -207,6 +298,15 @@ const Events = () => {
         place="NMIMS, Indore"
         desc="ACM Summit 2025 brought together students, researchers, and industry experts for insightful talks, technical sessions, and networking opportunities focused on emerging technologies and innovation."
         // report={genai25Report}
+         onClick={() =>
+    setSelectedEvent({
+      img: membershipdrive25,
+      title: "Membership Drive 2025-26",
+      time: "7 September 2025 • 3 days",
+      place: "TCET Campus",
+      desc: "A campus-wide membership drive introducing students to TCET ACM...",
+    })
+  }
       />
     
 
@@ -291,6 +391,44 @@ const Events = () => {
             )}
           </div>
         </div>
+        {selectedEvent && (
+  <div className="event-modal-overlay" onClick={() => setSelectedEvent(null)}>
+    <div
+      className="event-modal"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button
+        className="event-modal-close"
+        onClick={() => setSelectedEvent(null)}
+      >
+        ×
+      </button>
+
+      <h2>{selectedEvent.title}</h2>
+
+      <p className="event-meta-new">
+        <i className="ri-time-line"></i> {selectedEvent.time}
+      </p>
+
+      <p className="event-meta-new">
+        <i className="ri-map-pin-line"></i> {selectedEvent.place}
+      </p>
+
+      <p className="event-modal-desc">{selectedEvent.desc}</p>
+
+      {selectedEvent.report && (
+        <a
+          href={selectedEvent.report}
+          download
+          className="event-download-btn"
+        >
+          <i className="ri-download-line"></i> Download Report
+        </a>
+      )}
+    </div>
+  </div>
+)}
+
       </section>
     </>
   );
@@ -309,29 +447,43 @@ type Props = {
   place: string;
   desc: string;
   report?: string;
+  onClick?: () => void;
 };
-
-const Event = ({ img, title, time, place, desc,report }: Props) => (
-  <div className="event-card-new reveal">
+const Event = ({ img, title, time, place, desc, report, onClick }: Props) => (
+  <div
+    className="event-card-new reveal"
+    onClick={onClick}
+  >
     <div className="event-img">
       <img src={img} alt={title} />
     </div>
+
     <div className="event-content">
       <h3>{title}</h3>
+
       <p className="event-meta-new">
         <i className="ri-time-line"></i> {time}
       </p>
+
       <p className="event-meta-new">
         <i className="ri-map-pin-line"></i> {place}
       </p>
-      <p>{desc}</p>
+
+      <p className="event-desc-preview">
+        {desc.slice(0, 90)}...
+      </p>
+
+      {report && (
         <a
           href={report}
           download
           className="event-download-btn"
+          onClick={(e) => e.stopPropagation()}
         >
           <i className="ri-download-line"></i> Download Report
         </a>
+      )}
     </div>
   </div>
 );
+
