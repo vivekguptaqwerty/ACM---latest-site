@@ -72,6 +72,18 @@ export default function Landing() {
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
+  // Handle hash navigation after page load
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      // Small delay to ensure DOM is ready
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  }, []);
+
   const steps = [
     {
       number: "01",

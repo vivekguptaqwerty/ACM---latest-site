@@ -13,10 +13,11 @@ export function Navbar() {
   const isHome = location === "/";
 
   const navLinks = [
-    { href: "#tracks", label: "Eligibility" },
-    { href: "#about-ideathon", label: "About" },
-    { href: "#steps", label: "Tracks" },
-    { href: "#prizes", label: "Prizes" },
+    { href: "/", label: "Home", type: "route" },
+    { href: "#tracks", label: "Eligibility", type: "anchor" },
+    { href: "#about-ideathon", label: "About", type: "anchor" },
+    { href: "/tracks", label: "Tracks", type: "route" },
+    { href: "#prizes", label: "Prizes", type: "anchor" },
   ];
 
   return (
@@ -36,20 +37,56 @@ export function Navbar() {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-2">
             {navLinks.map((link) => (
-              <a 
-                key={link.label}
-                href={link.href} 
-                onClick={(e) => {
-                  e.preventDefault();
-                  const element = document.querySelector(link.href);
-                  element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }}
-                className="relative px-4 py-2 text-sm font-semibold text-white/80 hover:text-primary transition-all tracking-wider uppercase text-[11px] cursor-pointer group"
-              >
-                <span className="relative z-10">{link.label}</span>
-                <span className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 rounded-lg transition-all duration-300"></span>
-                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent group-hover:w-full transition-all duration-300"></span>
-              </a>
+              link.type === "route" ? (
+                link.label === "Home" ? (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (location === '/') {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      } else {
+                        window.location.href = link.href;
+                      }
+                    }}
+                    className="relative px-4 py-2 text-sm font-semibold text-white/80 hover:text-primary transition-all tracking-wider uppercase text-[11px] cursor-pointer group"
+                  >
+                    <span className="relative z-10">{link.label}</span>
+                    <span className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 rounded-lg transition-all duration-300"></span>
+                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent group-hover:w-full transition-all duration-300"></span>
+                  </a>
+                ) : (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="relative px-4 py-2 text-sm font-semibold text-white/80 hover:text-primary transition-all tracking-wider uppercase text-[11px] cursor-pointer group"
+                  >
+                    <span className="relative z-10">{link.label}</span>
+                    <span className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 rounded-lg transition-all duration-300"></span>
+                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent group-hover:w-full transition-all duration-300"></span>
+                  </Link>
+                )
+              ) : (
+                <a 
+                  key={link.label}
+                  href={link.href} 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (location !== '/') {
+                      window.location.href = '/' + link.href;
+                    } else {
+                      const element = document.querySelector(link.href);
+                      element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
+                  className="relative px-4 py-2 text-sm font-semibold text-white/80 hover:text-primary transition-all tracking-wider uppercase text-[11px] cursor-pointer group"
+                >
+                  <span className="relative z-10">{link.label}</span>
+                  <span className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 rounded-lg transition-all duration-300"></span>
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent group-hover:w-full transition-all duration-300"></span>
+                </a>
+              )
             ))}
 
             {user ? (
@@ -98,19 +135,53 @@ export function Navbar() {
           >
             <div className="px-4 py-8 flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a 
-                  key={link.label}
-                  href={link.href} 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const element = document.querySelector(link.href);
-                    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    setIsOpen(false);
-                  }}
-                  className="relative px-4 py-3 text-base font-display text-white/80 hover:text-primary cursor-pointer bg-white/5 hover:bg-primary/10 rounded-lg transition-all duration-300 border border-white/10 hover:border-primary/30"
-                >
-                  {link.label}
-                </a>
+                link.type === "route" ? (
+                  link.label === "Home" ? (
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (location === '/') {
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                        } else {
+                          window.location.href = link.href;
+                        }
+                        setIsOpen(false);
+                      }}
+                      className="relative px-4 py-3 text-base font-display text-white/80 hover:text-primary cursor-pointer bg-white/5 hover:bg-primary/10 rounded-lg transition-all duration-300 border border-white/10 hover:border-primary/30"
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      key={link.label}
+                      href={link.href}
+                      onClick={() => setIsOpen(false)}
+                      className="relative px-4 py-3 text-base font-display text-white/80 hover:text-primary cursor-pointer bg-white/5 hover:bg-primary/10 rounded-lg transition-all duration-300 border border-white/10 hover:border-primary/30"
+                    >
+                      {link.label}
+                    </Link>
+                  )
+                ) : (
+                  <a 
+                    key={link.label}
+                    href={link.href} 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (location !== '/') {
+                        window.location.href = '/' + link.href;
+                      } else {
+                        const element = document.querySelector(link.href);
+                        element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }
+                      setIsOpen(false);
+                    }}
+                    className="relative px-4 py-3 text-base font-display text-white/80 hover:text-primary cursor-pointer bg-white/5 hover:bg-primary/10 rounded-lg transition-all duration-300 border border-white/10 hover:border-primary/30"
+                  >
+                    {link.label}
+                  </a>
+                )
               ))}
               {user ? (
                 <>
