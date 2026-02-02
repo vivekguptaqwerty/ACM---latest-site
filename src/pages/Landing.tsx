@@ -134,7 +134,7 @@ export default function Landing() {
       icon: Award,
       title: "Registration Details",
       description: "Fee: ₹400 (for finalists only). Deadline: 13 Feb 2026.",
-      duration: "Open to All India UG"
+      duration: "Open to All India Engineering UG"
     }
   ];
 
@@ -313,8 +313,6 @@ export default function Landing() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                   <div className="absolute inset-0 shimmer-gold" />
                   <div className="absolute bottom-8 left-8 right-8">
-                    <div className="text-5xl font-orbitron font-bold text-gradient-gold mb-2">48:00:00</div>
-                    <div className="text-white/60 text-sm tracking-widest uppercase">Hours of Pure Innovation</div>
                   </div>
                 </div>
               </div>

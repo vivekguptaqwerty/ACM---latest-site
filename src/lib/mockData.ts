@@ -24,8 +24,8 @@ export const mockTracks: Track[] = [
   },
   {
     id: 2,
-    title: "Open to Undergraduates",
-    description: "All India undergraduate students are eligible to participate in this national-level ideathon.",
+    title: "Open to All Engineering Undergraduates",
+    description: "All India Engineering undergraduate students are eligible to participate in this national-level ideathon.",
     imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2670&auto=format&fit=crop"
   },
   {
