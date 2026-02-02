@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Manrope:wght@200;300;400;500;600;700;800&family=Cinzel:wght@400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Fonts */
+  --font-display: 'Orbitron', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+
+  /* Colors - HSL - Interstellar Theme */
+  --background: 230 30% 4%; /* Deep space black with blue tint */
+  --foreground: 220 20% 90%; /* Cool white for readability */
+  
+  /* Interstellar Palette - Cyan/Teal accent */
+  --primary: 185 80% 55%; /* Cyan glow */
+  --primary-foreground: 230 30% 5%;
+  
+  --secondary: 250 30% 12%; /* Deep purple-black */
+  --secondary-foreground: 185 80% 55%;
+  
+  --muted: 230 20% 15%;
+  --muted-foreground: 220 10% 55%;
+  
+  --accent: 270 50% 50%; /* Cosmic purple */
+  --accent-foreground: 0 0% 100%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 230 30% 20%;
+  --input: 230 30% 20%;
+  --ring: 185 80% 55%;
+
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+    background: linear-gradient(180deg, 
+      #000005 0%, 
+      #050510 20%, 
+      #0a0a1a 40%, 
+      #050515 60%, 
+      #020208 80%, 
+      #000005 100%
+    );
+    background-attachment: fixed;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply tracking-tight font-bold;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00D4FF] via-[#7B68EE] to-[#00D4FF];
+  }
+  
+  .text-gradient-interstellar {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00D4FF] via-[#A855F7] to-[#00D4FF];
+  }
+  
+  .border-gradient-gold {
+    border-image: linear-gradient(to right, #00D4FF, #7B68EE, #00D4FF) 1;
+  }
+  
+  .glass-panel {
+    @apply bg-[#0a0a1a]/60 backdrop-blur-xl border border-white/10 shadow-xl;
+  }
+
+  .glass-interstellar {
+    @apply bg-[#00D4FF]/5 backdrop-blur-md border border-[#00D4FF]/20 shadow-[0_0_20px_rgba(0,212,255,0.1)];
+  }
+
+  .glow-button {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3), 0 0 40px rgba(0, 212, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .glow-button:hover {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.5), 0 0 60px rgba(0, 212, 255, 0.2);
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  /* 3D Card Effect */
+  .card-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  .card-3d-inner {
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .card-3d:hover .card-3d-inner {
+    transform: rotateY(5deg) rotateX(5deg) translateZ(20px);
+  }
+
+  /* Floating Animation */
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotateX(0); }
+    50% { transform: translateY(-20px) rotateX(5deg); }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* 3D Text Shadow - Interstellar */
+  .text-3d {
+    text-shadow: 
+      0 1px 0 hsl(185, 80%, 50%),
+      0 2px 0 hsl(185, 80%, 45%),
+      0 3px 0 hsl(185, 80%, 40%),
+      0 4px 0 hsl(185, 80%, 35%),
+      0 5px 10px rgba(0,0,0,0.5),
+      0 10px 20px rgba(0,212,255,0.15);
+  }
+
+  /* Glow Pulse - removed for cleaner look */
+  .animate-glow-pulse {
+    /* No animation - cleaner look */
+  }
+
+  /* Hover shadow utility */
+  .hover-shadow {
+    transition: all 0.3s ease;
+  }
+
+  .hover-shadow:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3), 0 0 15px rgba(0,212,255,0.15);
+    transform: translateY(-3px);
+  }
+
+  /* Perspective Container */
+  .perspective-container {
+    perspective: 1500px;
+    transform-style: preserve-3d;
+  }
+
+  /* Tilt on Hover */
+  .tilt-hover {
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .tilt-hover:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(-5deg) scale(1.02);
+  }
+
+  /* Shimmer Effect */
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  .shimmer-interstellar {
+    background: linear-gradient(
+      90deg,
+      rgba(0,212,255,0) 0%,
+      rgba(0,212,255,0.2) 50%,
+      rgba(0,212,255,0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+  }
+
+  /* Timer Digit Style */
+  .timer-digit {
+    background: rgba(10, 10, 30, 0.8);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+  }
+
+  .timer-digit:hover {
+    border-color: rgba(0,212,255,0.3);
+    transform: translateY(-2px);
+  }
+
+  /* Card click shadow effect */
+  .click-shadow {
+    transition: all 0.2s ease;
+  }
+
+  .click-shadow:active {
+    box-shadow: 0 0 20px rgba(0,212,255,0.3), 0 0 40px rgba(0,212,255,0.15);
+    transform: scale(0.98);
+  }
+
+  /* Step Card 3D */
+  .step-card {
+    transform-style: preserve-3d;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .step-card:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 
+      0 20px 40px rgba(0,0,0,0.4),
+      0 0 30px rgba(0,212,255,0.1);
+  }
+}
