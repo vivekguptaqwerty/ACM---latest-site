@@ -144,15 +144,17 @@
   }
   
   .section-title {
+    text-align: center;
     font-family: "Space Grotesk", system-ui;
     font-size: clamp(1.9rem, 2.6vw, 2.4rem);
     margin-bottom: 0.5rem;
   }
   
   .section-subtitle {
+    text-align: center;
     color: var(--muted);
-    max-width: 580px;
-    font-size: 0.95rem;
+  
+    font-size: 1rem;
   }
   
   .grid {
@@ -2897,6 +2899,7 @@
 }
 
 .activity-card {
+  width: 50%;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   overflow: hidden;
@@ -2906,7 +2909,8 @@
 }
 
 .activity-card img {
-  height: 300px;
+  align-self: center;
+  height: 800px;
   width: 100%;
   border-radius: 12px;
   object-fit: cover;
@@ -2937,6 +2941,7 @@
   justify-content: center;
   z-index: 9999;
 }
+
 
 /* Modal box */
 .event-modal {
@@ -3009,3 +3014,73 @@
   }
 }
 
+
+.activity-card a {
+  text-align: center;
+  margin-top: 16px;
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #2563eb, #1e40af); /* blue gradient */
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+/* Hover effect */
+.activity-card a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.4);
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+/* Active / click */
+.activity-card a:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+/* Optional: focus for accessibility */
+.activity-card a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
+}
+.activity-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+.activity-card {
+  align-items: center;
+  margin-top: -50px;
+  width: 100%;
+  max-width: 720px; /* 👈 sweet spot */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(12px);
+}
+.activity-card img {
+  width: 100%;
+             /* 🔑 let image decide height */
+ height: 350px;    /* keeps it elegant */
+  object-fit: contain;       /* show full poster */
+  border-radius: 14px;
+  background: #0b1c2d;       /* blends with dark theme */
+}
+.activity-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+.activity-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}

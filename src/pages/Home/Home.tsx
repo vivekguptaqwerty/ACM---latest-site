@@ -13,6 +13,7 @@ import e3 from "../../assets/images/Socialcause.png";
 import e2 from "../../assets/images/ezine.png";
 import e1 from "../../assets/images/IIC.png";
 import e4 from "../../assets/images/ACMSummit.png";
+import e5 from "../../assets/images/innov.png";
 
 
 const Home = () => {
@@ -58,11 +59,11 @@ const Home = () => {
 
             <div className="hero-meta">
               <div className="hero-meta-item">
-               <b> <i className="ri-group-line"></i> 134+  Active members</b>
-                 <b><i className="ri-group-line"></i> 1155+  members</b>
+                <b> <i className="ri-group-line"></i> 134+  Active members</b>
+                <b><i className="ri-group-line"></i> 1155+  members</b>
               </div>
               <div className="hero-meta-item">
-               <b> <i className="ri-macbook-line"></i> 120+ events</b>
+                <b> <i className="ri-macbook-line"></i> 120+ events</b>
               </div>
             </div>
           </div>
@@ -112,47 +113,60 @@ const Home = () => {
 
         </div>
       </div>
-{/* RECENT ACTIVITIES */}
-<section id="recent-activities">
-  <div className="container reveal">
+      {/* RECENT ACTIVITIES */}
+      <section id="recent-activities">
+        <div className="container reveal">
 
-   
 
-    <h2 className="section-title">
-      Recent Activities 
-    </h2>
 
-    <p className="section-subtitle">
-      A glimpse of our latest events, workshops, hackathons and campus
-      initiatives driving innovation and collaboration.
+          <h2 className="section-title">
+            Upcoming Activity
+          </h2>
+
+          <p className="section-subtitle">
+            A glimpse of our latest events, workshops, hackathons and campus
+            initiatives driving innovation and collaboration.
+          </p>
+
+          <div className="grid recent-activities-grid">
+
+
+
+<div className="activity-wrapper">
+  <div className="activity-card reveal event-card">
+    <img src={e5} alt="Innov Genius" />
+
+    <h3>INNOVGENIUS 2026 – National Level Ideathon</h3>
+
+    <p>
+      The TCET ACM SIGITE Student Chapter presents INNOVGENIUS 2026, a
+      National-Level Ideathon proudly in collaboration with Tata Consultancy
+      Services (TCS) — bringing real-world industry exposure, expert evaluation,
+      and career opportunities.
     </p>
 
-    <div className="grid recent-activities-grid">
-
-    
-
-     
-      <div className="activity-card reveal">
-        <img src={e3} alt="Zephyr Fest" />
-        <h3>Social Cause – Cyber Safety Drive</h3>
-        <p>
-           Community outreach initiative spreading awareness about cyber safety
-    and responsible internet usage.
-        </p>
-      </div>
-
-      <div className="activity-card reveal">
-        <img src={e4} alt="PixxleHack" />
-        <h3>ACM Summit 2025</h3>
-        <p>
-          A flagship ACM summit featuring expert talks, student interactions,
-    and discussions on emerging technologies.
-        </p>
-      </div>
-
-    </div>
+    <a
+      href="https://unstop.com/hackathons/innovgenius-2026-hackathon-acm-tcet-1631419"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Register Now
+    </a>
   </div>
-</section>
+</div>
+
+            {/* <div className="activity-card reveal">
+              <img src={e4} alt="PixxleHack" />
+              <h3>ACM Summit 2025</h3>
+              <p>
+                A flagship ACM summit featuring expert talks, student interactions,
+                and discussions on emerging technologies.
+              </p>
+            </div> */}
+
+          </div>
+        </div>
+      </section>
 
 
       {/* ABOUT */}

@@ -6,6 +6,7 @@ import "../../styles/global.css";
 /* ===========================
    IMAGE IMPORTS – 2025–26
 =========================== */
+import Innovgenius25 from "../../assets/images/Innov.png";
 import recruitment25 from "../../assets/images/Recruitment.png";
 import membershipdrive25 from "../../assets/images/Membershipdrive.jpeg";
 import alumni25 from "../../assets/images/Alumniinteraction.png";
@@ -113,7 +114,27 @@ const [selectedEvent, setSelectedEvent] = useState<Props | null>(null);
            {/* ===== 2025–26 ===== */}
 {activeYear === "2025-26" && (
   <div className="year-slide active">
+    
     <div className="events-grid">
+      <Event
+        img={Innovgenius25}
+        title="INNOVGENIUS 2026 – National Level Ideathon"
+        time="29  May 2025 • 3 hours"
+        place="IT Staff room"
+        desc=" The TCET ACM SIGITE Student Chapter presents INNOVGENIUS 2026, a
+      National-Level Ideathon proudly in collaboration with Tata Consultancy
+      Services (TCS) — bringing real-world industry exposure, expert evaluation,
+      and career opportunities."
+         onClick={() =>
+    setSelectedEvent({
+      img: membershipdrive25,
+      title: "Membership Drive 2025-26",
+      time: "7 September 2025 • 3 days",
+      place: "TCET Campus",
+      desc: "A campus-wide membership drive introducing students to TCET ACM...",
+    })
+  }
+      />
        <Event
         img={recruitment25}
         title="Recruitment Process 2025-26"
@@ -336,6 +357,54 @@ const [selectedEvent, setSelectedEvent] = useState<Props | null>(null);
 
                   <Event img={qualpack22} title="Qualification Pack Workshop" time="20–25 Feb 2023" place="Online"
                     desc="Workshop covering Data Analytics, RPA & AWS." />
+                    <Event
+  img={zephyr22}
+  title="Zephyr 2022 — The Metaverse"
+  time="06–08 Oct 2022"
+  place="TCET Campus"
+  desc="A 3-day flagship technical fest with 4000+ participants, Marvel-themed challenges, DSA bootcamps, and immersive tech experiences."
+/>
+
+<Event
+  img={iv22}
+  title="Industrial Excursion: North India"
+  time="3–11 Jan 2023 • 9 Days"
+  place="Delhi – Nainital – Corbett"
+  desc="An immersive industrial visit bridging academic learning with real-world industry exposure across North India."
+/>
+
+<Event
+  img={iv22}
+  title="RPA: The Automation Masterclass"
+  time="Feb 2023"
+  place="Online"
+  desc="Hands-on workshop focused on UiPath Studio, bot deployment, and NASSCOM certification-oriented automation skills."
+/>
+
+<Event
+  img={iv22}
+  title="AWS Masterclass Series"
+  time="Feb 2023"
+  place="Online"
+  desc="In-depth cloud training covering AWS infrastructure, serverless computing, and essential security practices."
+/>
+
+<Event
+  img={bigdata22}
+  title="Webinar: Deciphering Big Data"
+  time="23 July 2022 • 2 hrs"
+  place="Online"
+  desc="Expert-led session on how modern organizations analyze and leverage massive datasets for decision-making."
+/>
+
+<Event
+  img={iv22}
+  title="Seminar on Higher Studies"
+  time="March 2023"
+  place="Seminar Hall"
+  desc="Career guidance seminar exploring postgraduate options, global universities, and international opportunities."
+/>
+
                 </div>
               </div>
             )}
@@ -361,6 +430,23 @@ const [selectedEvent, setSelectedEvent] = useState<Props | null>(null);
 
                   <Event img={genai24} title="Generative AI Seminar" time="27 January 2024" place="Online"
                     desc="Intro to LLMs and AI workflows." />
+                     <Event img={arvr23} title="AR & VR Exposure Program" time="4 August 2023" place="TIAT Lab"
+                    desc="Seminar + AR/VR lab visit." />
+
+                  <Event img={prototype23} title="Prototype Design Workshop" time="11 August 2023" place="Online"
+                    desc="Design thinking and prototyping workshop." />
+
+                  <Event img={localiv23} title="Local Industrial Visit" time="9 September 2023" place="Andheri & Vasai"
+                    desc="Industry tours with expert interactions." />
+
+                  <Event img={idea23} title="Idea Presentation" time="8 September 2023" place="Seminar Hall"
+                    desc="Platform for pitching innovative ideas." />
+
+                  <Event img={toi24} title="Times of India Visit" time="15–16 April 2024" place="Kandivali"
+                    desc="Insights into media and publishing workflows." />
+
+                  <Event img={genai24} title="Generative AI Seminar" time="27 January 2024" place="Online"
+                    desc="Intro to LLMs and AI workflows." />
                 </div>
               </div>
             )}
@@ -370,6 +456,23 @@ const [selectedEvent, setSelectedEvent] = useState<Props | null>(null);
               <div className="year-slide active">
                 <div className="events-grid">
                   <Event img={meeting24} title="Core Committee Meeting" time="06 July 2024" place="TCET"
+                    desc="Annual planning briefing." />
+
+                  <Event img={incubation24} title="Incubation Seminar" time="26 July 2024" place="TCET"
+                    desc="Entrepreneurship & incubation opportunities." />
+
+                  <Event img={social24} title="Educational Drive" time="16 August 2024" place="STS School"
+                    desc="IT awareness outreach." />
+
+                  <Event img={devops25} title="Platform Engineering in DevOps" time="29 January 2025" place="TCET"
+                    desc="DevOps workflows and scalability." />
+
+                  <Event img={alumni25b} title="Alumni Interaction" time="5 February 2025" place="TCET"
+                    desc="Placement & internship insights." />
+
+                  <Event img={ngo25} title="NGO Drive" time="26 March 2025" place="Caring Hands NGO"
+                    desc="Community outreach and mentorship." />
+                    <Event img={meeting24} title="Core Committee Meeting" time="06 July 2024" place="TCET"
                     desc="Annual planning briefing." />
 
                   <Event img={incubation24} title="Incubation Seminar" time="26 July 2024" place="TCET"
