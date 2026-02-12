@@ -114,59 +114,7 @@ const Home = () => {
         </div>
       </div>
       {/* RECENT ACTIVITIES */}
-      <section id="recent-activities">
-        <div className="container reveal">
-
-
-
-          <h2 className="section-title">
-            Upcoming Activity
-          </h2>
-
-          <p className="section-subtitle">
-            A glimpse of our latest events, workshops, hackathons and campus
-            initiatives driving innovation and collaboration.
-          </p>
-
-          <div className="grid recent-activities-grid">
-
-
-
-<div className="activity-wrapper">
-  <div className="activity-card reveal event-card">
-    <img src={e5} alt="Innov Genius" />
-
-    <h3>INNOVGENIUS 2026 – National Level Ideathon</h3>
-
-    <p>
-      The TCET ACM SIGITE Student Chapter presents INNOVGENIUS 2026, a
-      National-Level Ideathon proudly in collaboration with Tata Consultancy
-      Services (TCS) — bringing real-world industry exposure, expert evaluation,
-      and career opportunities.
-    </p>
-
-    <a
-      href="https://unstop.com/hackathons/innovgenius-2026-hackathon-acm-tcet-1631419"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Register Now
-    </a>
-  </div>
-</div>
-
-            {/* <div className="activity-card reveal">
-              <img src={e4} alt="PixxleHack" />
-              <h3>ACM Summit 2025</h3>
-              <p>
-                A flagship ACM summit featuring expert talks, student interactions,
-                and discussions on emerging technologies.
-              </p>
-            </div> */}
-
-          </div>
-        </div>
-      </section>
+    
 
 
       {/* ABOUT */}
