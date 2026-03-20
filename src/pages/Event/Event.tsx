@@ -18,6 +18,8 @@ import zephyr25 from "../../assets/images/zephyr.jpeg";
 import ezine25 from "../../assets/images/ezine.png";
 import social25 from "../../assets/images/Socialcause.png";
 import ACMSummit from "../../assets/images/ACMSummit.png";
+import Preconference from "../../assets/images/pre-conference.png";
+import LocalIV2026 from "../../assets/images/LocalIV.png";
 
 /* ===========================
    REPORT IMPORTS – 2025–26
@@ -66,7 +68,7 @@ import ngo25 from "../../assets/images/24.png";
 
 const Events = () => {
   const [activeYear, setActiveYear] = useState("2025-26");
-const [selectedEvent, setSelectedEvent] = useState<Props | null>(null);
+  const [selectedEvent, setSelectedEvent] = useState<Props | null>(null);
   useEffect(() => {
     const preloader = document.getElementById("preloader");
     if (preloader) preloader.style.display = "none";
@@ -111,248 +113,280 @@ const [selectedEvent, setSelectedEvent] = useState<Props | null>(null);
           <div className="year-slides-wrap reveal">
 
             {/* ===== 2025–26 ===== */}
-           {/* ===== 2025–26 ===== */}
-{activeYear === "2025-26" && (
-  <div className="year-slide active">
-    
-    <div className="events-grid">
-   
+            {/* ===== 2025–26 ===== */}
+            {activeYear === "2025-26" && (
+              <div className="year-slide active">
 
-  {/* INNOVGENIUS */}
-  <Event
-    img={Innovgenius25}
-    title="INNOVGENIUS 2026 – National Level Ideathon"
-    time="29 May 2025 • 3 hours"
-    place="IT Staff Room"
-    desc="A national-level ideathon encouraging students to solve real-world industry problems through innovation and structured idea pitching."
-    registrationLink="https://unstop.com/hackathons/innovgenius-2026-hackathon-acm-tcet-1631419"
-    onClick={() =>
-      setSelectedEvent({
-        img: Innovgenius25,
-        title: "INNOVGENIUS 2026 – National Level Ideathon",
-        time: "29 May 2025 • 3 hours",
-        place: "IT Staff Room",
-        desc: `INNOVGENIUS 2026 is a flagship national-level ideathon organized by the TCET ACM SIGITE Student Chapter in collaboration with Tata Consultancy Services (TCS). Participants tackled real-world problem statements, presented innovative solutions before expert evaluators, and received structured feedback from industry professionals. The event emphasized creativity, feasibility, scalability, and presentation skills while exposing students to practical industry expectations.`,
-        registrationLink: "https://unstop.com/hackathons/innovgenius-2026-hackathon-acm-tcet-1631419",
-      })
-    }
-  />
-
-  {/* RECRUITMENT */}
-  <Event
-    img={recruitment25}
-    title="Recruitment Process 2025–26"
-    time="29 May 2025 • 3 hours"
-    place="IT Staff Room"
-    desc="Structured selection process to onboard passionate and skilled ACM members."
-    onClick={() =>
-      setSelectedEvent({
-        img: recruitment25,
-        title: "Recruitment Process 2025–26",
-        time: "29 May 2025 • 3 hours",
-        place: "IT Staff Room",
-        desc: `The ACM Recruitment Process 2025–26 was designed to identify motivated and technically skilled students. The selection included technical assessments, task-based evaluation, interviews, and interaction rounds to assess communication, teamwork, and leadership abilities. The process ensured formation of a dedicated and dynamic student team.`,
-      })
-    }
-  />
-
-  {/* MEMBERSHIP DRIVE */}
-  <Event
-    img={membershipdrive25}
-    title="Membership Drive 2025–26"
-    time="7 September 2025 • 3 days"
-    place="TCET Campus"
-    desc="Campus-wide enrollment drive introducing students to ACM opportunities."
-    onClick={() =>
-      setSelectedEvent({
-        img: membershipdrive25,
-        title: "Membership Drive 2025–26",
-        time: "7 September 2025 • 3 days",
-        place: "TCET Campus",
-        desc: `The Membership Drive introduced students to the benefits of joining TCET ACM, including technical workshops, hackathons, networking opportunities, and leadership roles. The three-day drive included orientation sessions, interaction booths, and Q&A discussions to help students understand ACM’s vision and growth opportunities.`,
-      })
-    }
-  />
-
-  {/* ALUMNI INTERACTION */}
-  <Event
-    img={alumni25}
-    title="Alumni Interaction"
-    time="16 July 2025 • 2 hrs"
-    place="TCET Auditorium"
-    desc="Interactive session with alumni sharing industry and career insights."
-    report={alumni25Report}
-    onClick={() =>
-      setSelectedEvent({
-        img: alumni25,
-        title: "Alumni Interaction",
-        time: "16 July 2025 • 2 hrs",
-        place: "TCET Auditorium",
-        desc: `A highly engaging session where distinguished alumni shared their professional journeys, internship experiences, placement preparation strategies, and insights into corporate expectations. Students gained clarity on skill development, career planning, and real-world challenges.`,
-        report: alumni25Report,
-      })
-    }
-  />
-
-  {/* GENERATIVE AI */}
-  <Event
-    img={genai25}
-    title="Generative AI & Quantum Seminar"
-    time="17 July 2025 • 2 hrs"
-    place="TCET Auditorium"
-    desc="Seminar exploring AI models and emerging quantum computing concepts."
-    report={genai25Report}
-    onClick={() =>
-      setSelectedEvent({
-        img: genai25,
-        title: "Generative AI & Quantum Seminar",
-        time: "17 July 2025 • 2 hrs",
-        place: "TCET Auditorium",
-        desc: `This seminar introduced students to Generative AI, Large Language Models (LLMs), and foundational concepts in Quantum Computing. The session covered real-world AI applications, ethical considerations, and the future scope of quantum technologies, encouraging students to explore emerging research domains.`,
-        report: genai25Report,
-      })
-    }
-  />
-
-  {/* PIXXELHACK */}
-  <Event
-    img={pixxel25}
-    title="PixxleHack Webathon"
-    time="8 August 2025 • 48 hrs"
-    place="Online"
-    desc="48-hour intensive web development competition."
-    report={pixxel25Report}
-    onClick={() =>
-      setSelectedEvent({
-        img: pixxel25,
-        title: "PixxleHack Webathon",
-        time: "8 August 2025 • 48 hrs",
-        place: "Online",
-        desc: `PixxleHack was a 48-hour webathon challenging participants to design, develop, and deploy functional web applications within a strict time limit. The event emphasized UI/UX design, frontend-backend integration, deployment strategies, and teamwork under pressure.`,
-        report: pixxel25Report,
-      })
-    }
-  />
-
-  {/* AUTOMATION EXPO */}
-  <Event
-    img={automation25}
-    title="Automation Expo – Industrial Visit"
-    time="13–14 August 2025"
-    place="Nesco, Goregaon"
-    desc="Industrial exposure to automation and smart manufacturing systems."
-    report={automation25Report}
-    onClick={() =>
-      setSelectedEvent({
-        img: automation25,
-        title: "Automation Expo – Industrial Visit",
-        time: "13–14 August 2025",
-        place: "Nesco, Goregaon",
-        desc: `Students explored the latest advancements in automation, robotics, and smart manufacturing technologies at Automation Expo. The visit provided hands-on exposure to industrial machinery, IoT-based control systems, and interactions with industry experts.`,
-        report: automation25Report,
-      })
-    }
-  />
-
-  {/* IIC */}
-  <Event
-    img={iic25}
-    title="IIC — Institute Innovation Cell"
-    time="19 September 2025"
-    place="TCET"
-    desc="Mentorship-driven innovation and startup guidance sessions."
-    report={iic25Report}
-    onClick={() =>
-      setSelectedEvent({
-        img: iic25,
-        title: "IIC — Institute Innovation Cell",
-        time: "19 September 2025",
-        place: "TCET",
-        desc: `The IIC session focused on transforming innovative ideas into viable projects and startups. Students were guided through ideation frameworks, MVP validation, business modeling, and mentorship support provided under the Innovation Cell initiative.`,
-        report: iic25Report,
-      })
-    }
-  />
-
-  {/* ZEPHYR */}
-  <Event
-    img={zephyr25}
-    title="Zephyr — 3 Day Fest"
-    time="25–27 September 2025"
-    place="TCET Campus"
-    desc="Annual techno-cultural festival blending innovation and entertainment."
-    onClick={() =>
-      setSelectedEvent({
-        img: zephyr25,
-        title: "Zephyr — 3 Day Fest",
-        time: "25–27 September 2025",
-        place: "TCET Campus",
-        desc: `Zephyr 2025 was a vibrant three-day techno-cultural fest featuring technical competitions, gaming tournaments, creative showcases, food stalls, and cultural performances. The event fostered collaboration, innovation, and campus-wide engagement.`,
-      })
-    }
-  />
-
-  {/* E-MAGAZINE */}
-  <Event
-    img={ezine25}
-    title="E-Magazine"
-    time="20 October 2025"
-    place="Online"
-    desc="Digital publication featuring student achievements and articles."
-    onClick={() =>
-      setSelectedEvent({
-        img: ezine25,
-        title: "E-Magazine",
-        time: "20 October 2025",
-        place: "Online",
-        desc: `The ACM E-Magazine featured technical articles, student achievements, faculty contributions, and event highlights. It served as a platform to showcase innovation, creativity, and academic excellence within the ACM community.`,
-      })
-    }
-  />
-
-  {/* SOCIAL CAUSE */}
-  <Event
-    img={social25}
-    title="Social Cause — Cyber Safety Drive"
-    time="29 October 2025"
-    place="Buddha Vihar"
-    desc="Community outreach promoting digital safety awareness."
-    report={social25Report}
-    onClick={() =>
-      setSelectedEvent({
-        img: social25,
-        title: "Social Cause — Cyber Safety Drive",
-        time: "29 October 2025",
-        place: "Buddha Vihar",
-        desc: `ACM members conducted a Cyber Safety Awareness Drive educating local communities about online scams, digital privacy, and responsible internet usage. The initiative emphasized social responsibility and digital literacy.`,
-        report: social25Report,
-      })
-    }
-  />
-
-  {/* ACM SUMMIT */}
-  <Event
-    img={ACMSummit}
-    title="ACM Summit 2025"
-    time="19 December 2025 • Full Day"
-    place="NMIMS, Indore"
-    desc="National-level summit connecting students, researchers and industry."
-    onClick={() =>
-      setSelectedEvent({
-        img: ACMSummit,
-        title: "ACM Summit 2025",
-        time: "19 December 2025 • Full Day",
-        place: "NMIMS, Indore",
-        desc: `ACM Summit 2025 brought together students, researchers, and industry leaders for keynote talks, technical sessions, networking events, and discussions on emerging technologies. The summit provided exposure to research trends and career opportunities in computing domains.`,
-      })
-    }
-  />
+                <div className="events-grid">
+                  <Event
+  img={LocalIV2026}
+  title="AR/VR Hands-on Workshop 2025–26"
+  time="6 February 2026"
+  place="TCET Campus, Kandivali East, Mumbai"
+  desc="Interactive hands-on workshop where students explored Augmented and Virtual Reality concepts through live demonstrations and practical sessions, gaining real-world exposure to immersive technologies."
+  onClick={() =>
+    setSelectedEvent({
+      img: LocalIV2026,
+      title: "AR/VR Hands-on Workshop 2025–26",
+      time: "6 February 2026",
+      place: "TCET Campus, Kandivali East, Mumbai",
+      desc: "Interactive hands-on workshop where students explored Augmented and Virtual Reality concepts through live demonstrations and practical sessions, gaining real-world exposure to immersive technologies.",
+    })
+  }
+/>
+                   <Event
+                    img={Preconference}
+                    title="Pre-Conference workshop 2025–26"
+                    time="10 to 12 March 2026 • 3 Days"
+                    place="IT Staff Room"
+                    desc="Comprehensive DSA workshop enabling students to master fundamentals and develop industry-ready coding and analytical skills."
+                    onClick={() =>
+                      setSelectedEvent({
+                      img:Preconference,
+                    title:"Pre-Conference workshop 2025–26",
+                    time:"10 to 12 March 2026 • 3 Days",
+                    place:"IT Staff Room",
+                    desc:"Comprehensive DSA workshop enabling students to master fundamentals and develop industry-ready coding and analytical skills.",
+                      })
+                    }
+                  />
 
 
+                  {/* INNOVGENIUS */}
+                  <Event
+                    img={Innovgenius25}
+                    title="INNOVGENIUS 2026 – National Level Ideathon"
+                    time="20 Feb  2025 • 10 hours"
+                    place="TCET-IT Departmental Labs"
+                    desc="A national-level ideathon encouraging students to solve real-world industry problems through innovation and structured idea pitching."
+                    registrationLink="https://unstop.com/hackathons/innovgenius-2026-hackathon-acm-tcet-1631419"
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: Innovgenius25,
+                        title: "INNOVGENIUS 2026 – National Level Ideathon",
+                        time: "20 Feb  2025 • 10 hours",
+                        place: "TCET-IT Departmental Labs",
+                        desc: `INNOVGENIUS 2026 is a flagship national-level ideathon organized by the TCET ACM SIGITE Student Chapter in collaboration with Tata Consultancy Services (TCS). Participants tackled real-world problem statements, presented innovative solutions before expert evaluators, and received structured feedback from industry professionals. The event emphasized creativity, feasibility, scalability, and presentation skills while exposing students to practical industry expectations.`,
+                        
+                      })
+                    }
+                  />
 
-    </div>
-  </div>
-)}
+                  {/* RECRUITMENT */}
+                  <Event
+                    img={recruitment25}
+                    title="Recruitment Process 2025–26"
+                    time="29 May 2025 • 3 hours"
+                    place="IT Staff Room"
+                    desc="Structured selection process to onboard passionate and skilled ACM members."
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: recruitment25,
+                        title: "Recruitment Process 2025–26",
+                        time: "29 May 2025 • 3 hours",
+                        place: "IT Staff Room",
+                        desc: `The ACM Recruitment Process 2025–26 was designed to identify motivated and technically skilled students. The selection included technical assessments, task-based evaluation, interviews, and interaction rounds to assess communication, teamwork, and leadership abilities. The process ensured formation of a dedicated and dynamic student team.`,
+                      })
+                    }
+                  />
+
+                  {/* MEMBERSHIP DRIVE */}
+                  <Event
+                    img={membershipdrive25}
+                    title="Membership Drive 2025–26"
+                    time="7 September 2025 • 3 days"
+                    place="TCET Campus"
+                    desc="Campus-wide enrollment drive introducing students to ACM opportunities."
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: membershipdrive25,
+                        title: "Membership Drive 2025–26",
+                        time: "7 September 2025 • 3 days",
+                        place: "TCET Campus",
+                        desc: `The Membership Drive introduced students to the benefits of joining TCET ACM, including technical workshops, hackathons, networking opportunities, and leadership roles. The three-day drive included orientation sessions, interaction booths, and Q&A discussions to help students understand ACM’s vision and growth opportunities.`,
+                      })
+                    }
+                  />
+
+                  {/* ALUMNI INTERACTION */}
+                  <Event
+                    img={alumni25}
+                    title="Alumni Interaction"
+                    time="16 July 2025 • 2 hrs"
+                    place="TCET Auditorium"
+                    desc="Interactive session with alumni sharing industry and career insights."
+                    report={alumni25Report}
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: alumni25,
+                        title: "Alumni Interaction",
+                        time: "16 July 2025 • 2 hrs",
+                        place: "TCET Auditorium",
+                        desc: `A highly engaging session where distinguished alumni shared their professional journeys, internship experiences, placement preparation strategies, and insights into corporate expectations. Students gained clarity on skill development, career planning, and real-world challenges.`,
+                        report: alumni25Report,
+                      })
+                    }
+                  />
+
+                  {/* GENERATIVE AI */}
+                  <Event
+                    img={genai25}
+                    title="Generative AI & Quantum Seminar"
+                    time="17 July 2025 • 2 hrs"
+                    place="TCET Auditorium"
+                    desc="Seminar exploring AI models and emerging quantum computing concepts."
+                    report={genai25Report}
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: genai25,
+                        title: "Generative AI & Quantum Seminar",
+                        time: "17 July 2025 • 2 hrs",
+                        place: "TCET Auditorium",
+                        desc: `This seminar introduced students to Generative AI, Large Language Models (LLMs), and foundational concepts in Quantum Computing. The session covered real-world AI applications, ethical considerations, and the future scope of quantum technologies, encouraging students to explore emerging research domains.`,
+                        report: genai25Report,
+                      })
+                    }
+                  />
+
+                  {/* PIXXELHACK */}
+                  <Event
+                    img={pixxel25}
+                    title="PixxleHack Webathon"
+                    time="8 August 2025 • 48 hrs"
+                    place="Online"
+                    desc="48-hour intensive web development competition."
+                    report={pixxel25Report}
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: pixxel25,
+                        title: "PixxleHack Webathon",
+                        time: "8 August 2025 • 48 hrs",
+                        place: "Online",
+                        desc: `PixxleHack was a 48-hour webathon challenging participants to design, develop, and deploy functional web applications within a strict time limit. The event emphasized UI/UX design, frontend-backend integration, deployment strategies, and teamwork under pressure.`,
+                        report: pixxel25Report,
+                      })
+                    }
+                  />
+
+                  {/* AUTOMATION EXPO */}
+                  <Event
+                    img={automation25}
+                    title="Automation Expo – Industrial Visit"
+                    time="13–14 August 2025"
+                    place="Nesco, Goregaon"
+                    desc="Industrial exposure to automation and smart manufacturing systems."
+                    report={automation25Report}
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: automation25,
+                        title: "Automation Expo – Industrial Visit",
+                        time: "13–14 August 2025",
+                        place: "Nesco, Goregaon",
+                        desc: `Students explored the latest advancements in automation, robotics, and smart manufacturing technologies at Automation Expo. The visit provided hands-on exposure to industrial machinery, IoT-based control systems, and interactions with industry experts.`,
+                        report: automation25Report,
+                      })
+                    }
+                  />
+
+                  {/* IIC */}
+                  <Event
+                    img={iic25}
+                    title="IIC — Institute Innovation Cell"
+                    time="19 September 2025"
+                    place="TCET"
+                    desc="Mentorship-driven innovation and startup guidance sessions."
+                    report={iic25Report}
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: iic25,
+                        title: "IIC — Institute Innovation Cell",
+                        time: "19 September 2025",
+                        place: "TCET",
+                        desc: `The IIC session focused on transforming innovative ideas into viable projects and startups. Students were guided through ideation frameworks, MVP validation, business modeling, and mentorship support provided under the Innovation Cell initiative.`,
+                        report: iic25Report,
+                      })
+                    }
+                  />
+
+                  {/* ZEPHYR */}
+                  <Event
+                    img={zephyr25}
+                    title="Zephyr — 3 Day Fest"
+                    time="25–27 September 2025"
+                    place="TCET Campus"
+                    desc="Annual techno-cultural festival blending innovation and entertainment."
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: zephyr25,
+                        title: "Zephyr — 3 Day Fest",
+                        time: "25–27 September 2025",
+                        place: "TCET Campus",
+                        desc: `Zephyr 2025 was a vibrant three-day techno-cultural fest featuring technical competitions, gaming tournaments, creative showcases, food stalls, and cultural performances. The event fostered collaboration, innovation, and campus-wide engagement.`,
+                      })
+                    }
+                  />
+
+                  {/* E-MAGAZINE */}
+                  <Event
+                    img={ezine25}
+                    title="E-Magazine"
+                    time="20 October 2025"
+                    place="Online"
+                    desc="Digital publication featuring student achievements and articles."
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: ezine25,
+                        title: "E-Magazine",
+                        time: "20 October 2025",
+                        place: "Online",
+                        desc: `The ACM E-Magazine featured technical articles, student achievements, faculty contributions, and event highlights. It served as a platform to showcase innovation, creativity, and academic excellence within the ACM community.`,
+                      })
+                    }
+                  />
+
+                  {/* SOCIAL CAUSE */}
+                  <Event
+                    img={social25}
+                    title="Social Cause — Cyber Safety Drive"
+                    time="29 October 2025"
+                    place="Buddha Vihar"
+                    desc="Community outreach promoting digital safety awareness."
+                    report={social25Report}
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: social25,
+                        title: "Social Cause — Cyber Safety Drive",
+                        time: "29 October 2025",
+                        place: "Buddha Vihar",
+                        desc: `ACM members conducted a Cyber Safety Awareness Drive educating local communities about online scams, digital privacy, and responsible internet usage. The initiative emphasized social responsibility and digital literacy.`,
+                        report: social25Report,
+                      })
+                    }
+                  />
+
+                  {/* ACM SUMMIT */}
+                  <Event
+                    img={ACMSummit}
+                    title="ACM Summit 2025"
+                    time="19 December 2025 • Full Day"
+                    place="NMIMS, Indore"
+                    desc="National-level summit connecting students, researchers and industry."
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: ACMSummit,
+                        title: "ACM Summit 2025",
+                        time: "19 December 2025 • Full Day",
+                        place: "NMIMS, Indore",
+                        desc: `ACM Summit 2025 brought together students, researchers, and industry leaders for keynote talks, technical sessions, networking events, and discussions on emerging technologies. The summit provided exposure to research trends and career opportunities in computing domains.`,
+                      })
+                    }
+                  />
+
+
+
+                </div>
+              </div>
+            )}
 
 
             {/* ===== 2022–23 ===== */}
@@ -376,7 +410,7 @@ const [selectedEvent, setSelectedEvent] = useState<Props | null>(null);
 
                   <Event img={qualpack22} title="Qualification Pack Workshop" time="20–25 Feb 2023" place="Online"
                     desc="Workshop covering Data Analytics, RPA & AWS." />
-                  
+
                 </div>
               </div>
             )}
@@ -402,8 +436,8 @@ const [selectedEvent, setSelectedEvent] = useState<Props | null>(null);
 
                   <Event img={genai24} title="Generative AI Seminar" time="27 January 2024" place="Online"
                     desc="Intro to LLMs and AI workflows." />
-                    
-                 
+
+
                 </div>
               </div>
             )}
@@ -429,60 +463,60 @@ const [selectedEvent, setSelectedEvent] = useState<Props | null>(null);
 
                   <Event img={ngo25} title="NGO Drive" time="26 March 2025" place="Caring Hands NGO"
                     desc="Community outreach and mentorship." />
-                   
+
                 </div>
               </div>
             )}
           </div>
         </div>
         {selectedEvent && (
-  <div className="event-modal-overlay" onClick={() => setSelectedEvent(null)}>
-    <div
-      className="event-modal"
-      onClick={(e) => e.stopPropagation()}
-    >
-      <button
-        className="event-modal-close"
-        onClick={() => setSelectedEvent(null)}
-      >
-        ×
-      </button>
+          <div className="event-modal-overlay" onClick={() => setSelectedEvent(null)}>
+            <div
+              className="event-modal"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                className="event-modal-close"
+                onClick={() => setSelectedEvent(null)}
+              >
+                ×
+              </button>
 
-      <h2>{selectedEvent.title}</h2>
+              <h2>{selectedEvent.title}</h2>
 
-      <p className="event-meta-new">
-        <i className="ri-time-line"></i> {selectedEvent.time}
-      </p>
+              <p className="event-meta-new">
+                <i className="ri-time-line"></i> {selectedEvent.time}
+              </p>
 
-      <p className="event-meta-new">
-        <i className="ri-map-pin-line"></i> {selectedEvent.place}
-      </p>
+              <p className="event-meta-new">
+                <i className="ri-map-pin-line"></i> {selectedEvent.place}
+              </p>
 
-      <p className="event-modal-desc">{selectedEvent.desc}</p>
+              <p className="event-modal-desc">{selectedEvent.desc}</p>
 
-      {selectedEvent.report && (
-        <a
-          href={selectedEvent.report}
-          download
-          className="event-download-btn"
-        >
-          <i className="ri-download-line"></i> Download Report
-        </a>
-      )}
-      {selectedEvent.registrationLink && (
-  <a
-    href={selectedEvent.registrationLink}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="event-register-btn"
-  >
-    <i className="ri-external-link-line"></i> Register Now
-  </a>
-)}
+              {selectedEvent.report && (
+                <a
+                  href={selectedEvent.report}
+                  download
+                  className="event-download-btn"
+                >
+                  <i className="ri-download-line"></i> Download Report
+                </a>
+              )}
+              {selectedEvent.registrationLink && (
+                <a
+                  href={selectedEvent.registrationLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="event-register-btn"
+                >
+                  <i className="ri-external-link-line"></i> Register Now
+                </a>
+              )}
 
-    </div>
-  </div>
-)}
+            </div>
+          </div>
+        )}
 
       </section>
     </>
@@ -502,9 +536,9 @@ type Props = {
   place: string;
   desc: string;
   report?: string;
-    registrationLink?: string;
+  registrationLink?: string;
   onClick?: () => void;
-  
+
 };
 const Event = ({ img, title, time, place, desc, report, registrationLink, onClick }: Props) => (
   <div
@@ -540,7 +574,7 @@ const Event = ({ img, title, time, place, desc, report, registrationLink, onClic
           <i className="ri-download-line"></i> Download Report
         </a>
       )}
-      
+
     </div>
   </div>
 );

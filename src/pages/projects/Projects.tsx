@@ -5,6 +5,9 @@ import winner from "../../assets/images/winner.jpeg";
 import finalist from "../../assets/images/finalist.jpeg";
 import olympiad from "../../assets/images/olympiad.jpeg";
 import WinnersPixxelhack from "../../assets/images/WinnersPixxelhack.jpeg";
+import BestWebsite from "../../assets/images/Bestwebsiteaward.png";
+import Innovgenius2ndwinner from "../../assets/images/Innovgenius_2nd.png";
+import Innovgenius3rddwinner from "../../assets/images/Innovgenius3rd.png";
 
 type Project = {
   title: string;
@@ -14,6 +17,24 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+  title: "Honourable Mention – Best Website Award (ACM India Council)",
+  image: BestWebsite,
+  desc: "Recognized at the ACM India Council for excellence in web development during PixxelHack Webathon organized by TCET ACM, where a Kartavya student from IT secured first position.",
+ tags: ["Award Winning", "ACM Recognition", "Top Performer"],
+},
+{
+  title: "Second Place – Innov Genius 2025 (SE IT Department)",
+  image: Innovgenius2ndwinner,
+  desc: "Secured second position in Innov Genius for developing an innovative and impactful solution, demonstrating strong technical execution and problem-solving skills.",
+  tags: ["Innovation", "Technical Excellence", "Competition"],
+},
+{
+  title: "Third Place – Innov Genius 2025 (SE IT Department)",
+  image: Innovgenius3rddwinner,
+  desc: "Secured third position in Innov Genius for presenting an innovative solution, showcasing strong technical skills, creativity, and effective problem-solving abilities.",
+  tags: ["Innovation", "Technical Skills", "Competition"],
+},
   {
     title: "Winner - Coherence - 2025 Blockchain Domain",
     image: winner,
@@ -26,6 +47,7 @@ const projects: Project[] = [
     desc: "AI-based smart assistant created during ACM Research Sprint.",
     tags: ["AI", "Python"],
   },
+  
   {
     title: "Secured 19th rank in National Maths Olympiad",
     image: olympiad,
@@ -38,6 +60,7 @@ const projects: Project[] = [
     desc: "Pixxelhack webathon organised by TCET ACM : Kartavya student of IT secured first position in that",
     tags: ["Intutive Thinking", "Web development"],
   },
+ 
 ];
 
 const Projects = () => {

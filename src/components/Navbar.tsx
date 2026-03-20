@@ -35,12 +35,7 @@ const Navbar = () => {
 
         {/* CTA + HAMBURGER */}
         <div className="nav-cta">
-          <NavLink to="/contact">
-            <button className="btn btn-ghost">
-              <i className="ri-mail-line"></i> Reach TCET ACM
-            </button>
-          </NavLink>
-
+         
           <button
             className="nav-menu-btn"
             aria-label="Toggle navigation"

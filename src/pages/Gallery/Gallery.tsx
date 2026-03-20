@@ -19,10 +19,17 @@ import g15 from "../../assets/images/gallery15.jpeg";
 import g16 from "../../assets/images/gallery16.jpeg";
 import g17 from "../../assets/images/gallery17.jpeg"
 import g18 from "../../assets/images/gallery18.jpeg"
+import BestWebsite from "../../assets/images/Bestwebsiteaward.png";
+import Innovgenius2ndwinner from "../../assets/images/Innovgenius_2nd.png";
+import Innovgenius3rddwinner from "../../assets/images/Innovgenius3rd.png";
+import Preconference from "../../assets/images/pre-conference.png";
+import LocalIV2026 from "../../assets/images/LocalIV.png";
+
 
 const Gallery = () => {
   return (
     <>
+    
 
       {/* GALLERY SECTION */}
       <section id="gallery">
@@ -43,6 +50,40 @@ const Gallery = () => {
 
           {/* GALLERY GRID */}
           <div className="gallery-grid reveal">
+            <div className="gallery-item">
+  <img src={BestWebsite} alt="" />
+  <span className="gallery-caption">
+    Best Website Award – ACM India Council
+  </span>
+</div>
+
+<div className="gallery-item">
+  <img src={Innovgenius2ndwinner} alt="" />
+  <span className="gallery-caption">
+    Innov Genius 2025 – Second Place
+  </span>
+</div>
+
+<div className="gallery-item">
+  <img src={Innovgenius3rddwinner} alt="" />
+  <span className="gallery-caption">
+    Innov Genius 2025 – Third Place
+  </span>
+</div>
+
+<div className="gallery-item">
+  <img src={Preconference} alt="" />
+  <span className="gallery-caption">
+    Pre-Conference Workshop 2026 (DSA)
+  </span>
+</div>
+
+<div className="gallery-item">
+  <img src={LocalIV2026} alt="" />
+  <span className="gallery-caption">
+    AR/VR Hands-on Workshop 2026
+  </span>
+</div>
 
             <div className="gallery-item">
               <img src={g1} alt="" />

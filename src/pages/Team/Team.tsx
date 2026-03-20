@@ -111,7 +111,7 @@ const Team = () => {
 
                     <StudentCard img={prakshal} name="Prakshal Jain" role="Webmaster"
                         linkedin="https://www.linkedin.com/in/prakshal-jain-b832b5331"
-                        github="https://github.com/Prakshal--97" />
+                        github="hhttps://github.com/Prakshal97" />
                 </div>
             </div>
         </section>
