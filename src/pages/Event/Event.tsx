@@ -20,6 +20,7 @@ import social25 from "../../assets/images/Socialcause.png";
 import ACMSummit from "../../assets/images/ACMSummit.png";
 import Preconference from "../../assets/images/pre-conference.png";
 import LocalIV2026 from "../../assets/images/LocalIV.png";
+import ACMrecode from "../../assets/images/Recode.png";
 
 /* ===========================
    REPORT IMPORTS – 2025–26
@@ -118,6 +119,36 @@ const Events = () => {
               <div className="year-slide active">
 
                 <div className="events-grid">
+                  <Event
+  img={ACMrecode} // temporary image use kar raha hu (change if needed)
+  title="ACM ReCode: Redesign, Rebuild & Reimagine"
+  time="14–15 March (Online) • 3–4 April (Offline) • Final Presentations"
+  place="Unstop + MPSTME, NMIMS Mumbai"
+  desc="A 3-round hackathon focused on redesigning existing applications using design thinking and development. Includes online problem-solving, offline 18-hour build, and final presentations."
+  registrationLink="https://unstop.com/p/acm-recode-redesign-rebuild-and-reimagine-duplicate-mukesh-patel-school-of-technology-management-and-engineering-nmims-1651227"
+  onClick={() =>
+    setSelectedEvent({
+      img: ACMrecode,
+      title: "🚀 ACM ReCode: Redesign, Rebuild & Reimagine",
+      time: "Round 1: 14–15 March (Online) | Round 2: 3–4 April (Offline) | Round 3: Finals",
+      place: "Unstop + MPSTME, NMIMS Mumbai",
+      desc: `ACM ReCode is a 3-round hackathon designed to test design thinking and full-stack development skills.
+
+Round 1 (Online): Problem statement based round with 9 challenges across frontend, backend, and full stack tracks.
+
+Round 2 (Offline): 18-hour intensive build at MPSTME with meals provided and a surprise twist.
+
+Round 3: Final presentations before a judging panel.
+
+Team Size: 1–3
+Registration Fee: ₹300 per team
+Prize Pool: ₹70K+
+Open to students across colleges.`,
+      registrationLink:
+        "https://unstop.com/p/acm-recode-redesign-rebuild-and-reimagine-duplicate-mukesh-patel-school-of-technology-management-and-engineering-nmims-1651227",
+    })
+  }
+/>
                   <Event
   img={LocalIV2026}
   title="AR/VR Hands-on Workshop 2025–26"
