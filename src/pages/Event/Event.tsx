@@ -120,19 +120,19 @@ const Events = () => {
 
                 <div className="events-grid">
                   <Event
-  img={ACMrecode} // temporary image use kar raha hu (change if needed)
-  title="ACM ReCode: Redesign, Rebuild & Reimagine"
-  time="14–15 March (Online) • 3–4 April (Offline) • Final Presentations"
-  place="Unstop + MPSTME, NMIMS Mumbai"
-  desc="A 3-round hackathon focused on redesigning existing applications using design thinking and development. Includes online problem-solving, offline 18-hour build, and final presentations."
-  registrationLink="https://unstop.com/p/acm-recode-redesign-rebuild-and-reimagine-duplicate-mukesh-patel-school-of-technology-management-and-engineering-nmims-1651227"
-  onClick={() =>
-    setSelectedEvent({
-      img: ACMrecode,
-      title: "🚀 ACM ReCode: Redesign, Rebuild & Reimagine",
-      time: "Round 1: 14–15 March (Online) | Round 2: 3–4 April (Offline) | Round 3: Finals",
-      place: "Unstop + MPSTME, NMIMS Mumbai",
-      desc: `ACM ReCode is a 3-round hackathon designed to test design thinking and full-stack development skills.
+                    img={ACMrecode} // temporary image use kar raha hu (change if needed)
+                    title="ACM ReCode: Redesign, Rebuild & Reimagine"
+                    time="14–15 March (Online) • 3–4 April (Offline) • Final Presentations"
+                    place="MPSTME, NMIMS Mumbai"
+                    desc="A 3-round hackathon focused on redesigning existing applications using design thinking and development. Includes online problem-solving, offline 18-hour build, and final presentations."
+                    registrationLink="https://unstop.com/p/acm-recode-redesign-rebuild-and-reimagine-duplicate-mukesh-patel-school-of-technology-management-and-engineering-nmims-1651227"
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: ACMrecode,
+                        title: "🚀 ACM ReCode: Redesign, Rebuild & Reimagine",
+                        time: "Round 1: 14–15 March (Online) | Round 2: 3–4 April (Offline) | Round 3: Finals",
+                        place: "MPSTME, NMIMS Mumbai",
+                        desc: `ACM ReCode is a 3-round hackathon designed to test design thinking and full-stack development skills.
 
 Round 1 (Online): Problem statement based round with 9 challenges across frontend, backend, and full stack tracks.
 
@@ -144,28 +144,28 @@ Team Size: 1–3
 Registration Fee: ₹300 per team
 Prize Pool: ₹70K+
 Open to students across colleges.`,
-      registrationLink:
-        "https://unstop.com/p/acm-recode-redesign-rebuild-and-reimagine-duplicate-mukesh-patel-school-of-technology-management-and-engineering-nmims-1651227",
-    })
-  }
-/>
+                        registrationLink:
+                          "https://unstop.com/p/acm-recode-redesign-rebuild-and-reimagine-duplicate-mukesh-patel-school-of-technology-management-and-engineering-nmims-1651227",
+                      })
+                    }
+                  />
                   <Event
-  img={LocalIV2026}
-  title="AR/VR Hands-on Workshop 2025–26"
-  time="6 February 2026"
-  place="TCET Campus, Kandivali East, Mumbai"
-  desc="Interactive hands-on workshop where students explored Augmented and Virtual Reality concepts through live demonstrations and practical sessions, gaining real-world exposure to immersive technologies."
-  onClick={() =>
-    setSelectedEvent({
-      img: LocalIV2026,
-      title: "AR/VR Hands-on Workshop 2025–26",
-      time: "6 February 2026",
-      place: "TCET Campus, Kandivali East, Mumbai",
-      desc: "Interactive hands-on workshop where students explored Augmented and Virtual Reality concepts through live demonstrations and practical sessions, gaining real-world exposure to immersive technologies.",
-    })
-  }
-/>
-                   <Event
+                    img={LocalIV2026}
+                    title="AR/VR Hands-on Workshop 2025–26"
+                    time="6 February 2026"
+                    place="TCET Campus, Kandivali East, Mumbai"
+                    desc="Interactive hands-on workshop where students explored Augmented and Virtual Reality concepts through live demonstrations and practical sessions, gaining real-world exposure to immersive technologies."
+                    onClick={() =>
+                      setSelectedEvent({
+                        img: LocalIV2026,
+                        title: "AR/VR Hands-on Workshop 2025–26",
+                        time: "6 February 2026",
+                        place: "TCET Campus, Kandivali East, Mumbai",
+                        desc: "Interactive hands-on workshop where students explored Augmented and Virtual Reality concepts through live demonstrations and practical sessions, gaining real-world exposure to immersive technologies.",
+                      })
+                    }
+                  />
+                  <Event
                     img={Preconference}
                     title="Pre-Conference workshop 2025–26"
                     time="10 to 12 March 2026 • 3 Days"
@@ -173,11 +173,11 @@ Open to students across colleges.`,
                     desc="Comprehensive DSA workshop enabling students to master fundamentals and develop industry-ready coding and analytical skills."
                     onClick={() =>
                       setSelectedEvent({
-                      img:Preconference,
-                    title:"Pre-Conference workshop 2025–26",
-                    time:"10 to 12 March 2026 • 3 Days",
-                    place:"IT Staff Room",
-                    desc:"Comprehensive DSA workshop enabling students to master fundamentals and develop industry-ready coding and analytical skills.",
+                        img: Preconference,
+                        title: "Pre-Conference workshop 2025–26",
+                        time: "10 to 12 March 2026 • 3 Days",
+                        place: "IT Staff Room",
+                        desc: "Comprehensive DSA workshop enabling students to master fundamentals and develop industry-ready coding and analytical skills.",
                       })
                     }
                   />
@@ -198,7 +198,7 @@ Open to students across colleges.`,
                         time: "20 Feb  2025 • 10 hours",
                         place: "TCET-IT Departmental Labs",
                         desc: `INNOVGENIUS 2026 is a flagship national-level ideathon organized by the TCET ACM SIGITE Student Chapter in collaboration with Tata Consultancy Services (TCS). Participants tackled real-world problem statements, presented innovative solutions before expert evaluators, and received structured feedback from industry professionals. The event emphasized creativity, feasibility, scalability, and presentation skills while exposing students to practical industry expectations.`,
-                        
+
                       })
                     }
                   />
@@ -380,7 +380,7 @@ Open to students across colleges.`,
                     img={social25}
                     title="Social Cause — Cyber Safety Drive"
                     time="29 October 2025"
-                    place="Buddha Vihar"
+                    place="Navayan Buddha Vihar"
                     desc="Community outreach promoting digital safety awareness."
                     report={social25Report}
                     onClick={() =>
@@ -388,7 +388,7 @@ Open to students across colleges.`,
                         img: social25,
                         title: "Social Cause — Cyber Safety Drive",
                         time: "29 October 2025",
-                        place: "Buddha Vihar",
+                        place: "Navayan Buddha Vihar",
                         desc: `ACM members conducted a Cyber Safety Awareness Drive educating local communities about online scams, digital privacy, and responsible internet usage. The initiative emphasized social responsibility and digital literacy.`,
                         report: social25Report,
                       })
@@ -399,14 +399,14 @@ Open to students across colleges.`,
                   <Event
                     img={ACMSummit}
                     title="ACM Summit 2025"
-                    time="19 December 2025 • Full Day"
+                    time="18-20 December 2025 • 3 Day"
                     place="NMIMS, Indore"
                     desc="National-level summit connecting students, researchers and industry."
                     onClick={() =>
                       setSelectedEvent({
                         img: ACMSummit,
                         title: "ACM Summit 2025",
-                        time: "19 December 2025 • Full Day",
+                        time: "18-20 December 2025 • 3 day",
                         place: "NMIMS, Indore",
                         desc: `ACM Summit 2025 brought together students, researchers, and industry leaders for keynote talks, technical sessions, networking events, and discussions on emerging technologies. The summit provided exposure to research trends and career opportunities in computing domains.`,
                       })
@@ -571,7 +571,7 @@ type Props = {
   onClick?: () => void;
 
 };
-const Event = ({ img, title, time, place, desc, report, registrationLink, onClick }: Props) => (
+const Event = ({ img, title, time, place, desc, report, onClick }: Props) => (
   <div
     className="event-card-new reveal"
     onClick={onClick}

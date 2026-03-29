@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { type Track } from "@/lib/mockData";
-import { ArrowRight } from "lucide-react";
 
 export function TrackCard({ track, index }: { track: Track; index: number }) {
   return (

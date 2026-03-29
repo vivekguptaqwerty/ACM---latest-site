@@ -95,6 +95,7 @@ const Home = () => {
             <img src={g5} alt="ACM Gallery" />
             <img src={e4} alt="ACM Hackathon" />
             <img src={g6} alt="ACM Gallery" />
+            <img src={e5} alt="innov" />
           </div>
 
           {/* GROUP 2 (duplicate for seamless loop) */}

@@ -16,7 +16,7 @@ async function logout(): Promise<void> {
 
 export function useAuth() {
   const queryClient = useQueryClient();
-  const { data: user, isLoading } = useQuery<User | null>({
+  const { data: user } = useQuery<User | null>({
     queryKey: ["user"],
     queryFn: fetchUser,
     retry: false,

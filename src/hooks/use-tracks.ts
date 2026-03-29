@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { mockTracks, type Track } from "@/lib/mockData";
+import { mockTracks } from "@/lib/mockData";
 
 export function useTracks() {
   return useQuery({

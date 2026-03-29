@@ -1,8 +1,7 @@
-import { Navbar } from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import { ParticleBackground } from "@/components/ParticleBackground";
 import { useAuth } from "@/hooks/use-auth";
 import { motion } from "framer-motion";
-import { Section } from "@/components/Section";
 import { Clock, CheckCircle, AlertCircle } from "lucide-react";
 
 export default function Dashboard() {

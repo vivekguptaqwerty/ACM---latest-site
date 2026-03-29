@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import { ParticleBackground } from "@/components/ParticleBackground";
 import { FloatingIcons } from "@/components/FloatingIcons";
 import { SpaceBackground } from "@/components/SpaceBackground";
@@ -6,8 +6,8 @@ import { Section } from "@/components/Section";
 import { TrackCard } from "@/components/TrackCard";
 import { useTracks } from "@/hooks/use-tracks";
 import { Button } from "@/components/ui/button";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { Trophy, Calendar, Users, Cpu, ArrowRight, Lightbulb, Code, Presentation, Award, Rocket, Clock } from "lucide-react";
+import { motion } from "framer-motion";
+import { Trophy, Users, Cpu, Lightbulb, Code, Presentation, Award, Clock } from "lucide-react";
 import { useState, useEffect } from "react";
 
 function CountdownTimer() {
@@ -69,8 +69,6 @@ function CountdownTimer() {
 
 export default function Landing() {
   const { data: tracks } = useTracks();
-  const { scrollYProgress } = useScroll();
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   // Handle hash navigation and cross-route scrolling
   useEffect(() => {

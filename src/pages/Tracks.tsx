@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/Navbar";
+import Navbar  from "@/components/Navbar";
 import { SpaceBackground } from "@/components/SpaceBackground";
 import { useEffect } from "react";
 
