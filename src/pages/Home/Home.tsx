@@ -27,11 +27,11 @@ const Home = () => {
           <div className="hero-left">
             <div className="hero-eyebrow">
               <i className="ri-global-line"></i>
-              TCET ACM SIGITE Student Chapter
+              Thakur College of Engineering & Technology (TCET) ACM SIGITE Student Chapter
             </div>
 
             <h1 className="hero-title">
-              A student-powered ACM community
+              A student-powered ACM community{" "}
               <span className="accent">
                 building the next era of innovation at TCET.
               </span>
