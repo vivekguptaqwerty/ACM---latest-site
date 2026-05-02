@@ -40,16 +40,6 @@ import social25Report from "../../assets/reports/Social Cause Report .pdf";
 
 
 /* ===========================
-   IMAGE IMPORTS – 2022–23
-=========================== */
-import bigdata22 from "../../assets/images/7.png";
-import iv22 from "../../assets/images/industrial-visit-delhi-nainital-2023.png";
-import zephyr22 from "../../assets/images/9.jpeg";
-import alumni22 from "../../assets/images/alumni-interaction-2023.jpeg";
-import blockchain22 from "../../assets/images/11.jpeg";
-import qualpack22 from "../../assets/images/qualification-pack-workshop-2023.jpeg";
-
-/* ===========================
    IMAGE IMPORTS – 2023–24
 =========================== */
 import arvr23 from "../../assets/images/13.png";
@@ -212,15 +202,15 @@ Open to students across colleges.`,
     img={Innovgenius25}
     title="INNOVGENIUS 2026 – National Level Ideathon"
     time="20 Feb  2026 • 10 hours"
-    place="TCET-IT Departmental Labs"
-    desc="A national-level ideathon encouraging students to solve real-world industry problems through innovation and structured idea pitching."
+    place="TCET Campus"
+    desc="A national-level ideathon organised by TCET-ACM SIGITE encouraging students to solve real-world industry problems through innovation and structured idea pitching."
     registrationLink="https://unstop.com/hackathons/innovgenius-2026-hackathon-acm-tcet-1631419"
     onClick={() =>
       setSelectedEvent({
         img: Innovgenius25,
         title: "INNOVGENIUS 2026 – National Level Ideathon",
         time: "20 Feb  2026 • 10 hours",
-        place: "TCET-IT Departmental Labs",
+        place: "TCET Campus",
         desc: `INNOVGENIUS 2026 is a flagship national-level ideathon organized by the TCET ACM SIGITE Student Chapter in collaboration with Tata Consultancy Services (TCS). Participants tackled real-world problem statements, presented innovative solutions before expert evaluators, and received structured feedback from industry professionals.`,
       })
     }
@@ -321,7 +311,7 @@ Open to students across colleges.`,
   {/* IIC */}
   <Event
     img={iic25}
-    title="IIC — Institute Innovation Cell"
+    title="Seminar on Idea to impact"
     time="19 September 2025"
     place="TCET"
     desc="Mentorship-driven innovation and startup guidance sessions."
@@ -329,7 +319,7 @@ Open to students across colleges.`,
     onClick={() =>
       setSelectedEvent({
         img: iic25,
-        title: "IIC — Institute Innovation Cell",
+        title: "Seminar on Idea to impact",
         time: "19 September 2025",
         place: "TCET",
         desc: `The IIC session focused on transforming innovative ideas into viable projects and startups. Students were guided through ideation frameworks, MVP validation, business modeling, and mentorship support provided under the Innovation Cell initiative.`,
@@ -383,7 +373,7 @@ Open to students across colleges.`,
     img={genai25}
     title="Generative AI & Quantum Seminar"
     time="17 July 2025 • 2 hrs"
-    place="TCET Auditorium"
+    place="TCET Seminar hall-3"
     desc="Seminar exploring AI models and emerging quantum computing concepts."
     report={genai25Report}
     onClick={() =>
@@ -391,7 +381,7 @@ Open to students across colleges.`,
         img: genai25,
         title: "Generative AI & Quantum Seminar",
         time: "17 July 2025 • 2 hrs",
-        place: "TCET Auditorium",
+        place: "TCET Seminar hall-3",
         desc: `This seminar introduced students to Generative AI, Large Language Models (LLMs), and foundational concepts in Quantum Computing. The session covered real-world AI applications, ethical considerations, and the future scope of quantum technologies, encouraging students to explore emerging research domains.`,
         report: genai25Report,
       })
@@ -403,7 +393,7 @@ Open to students across colleges.`,
     img={alumni25}
     title="Alumni Interaction"
     time="16 July 2025 • 2 hrs"
-    place="TCET Auditorium"
+    place="TCET Seminar hall-3"
     desc="Interactive session with alumni sharing industry and career insights."
     report={alumni25Report}
     onClick={() =>
@@ -411,7 +401,7 @@ Open to students across colleges.`,
         img: alumni25,
         title: "Alumni Interaction",
         time: "16 July 2025 • 2 hrs",
-        place: "TCET Auditorium",
+        place: "TCET Seminar hall-3",
         desc: `A highly engaging session where distinguished alumni shared their professional journeys, internship experiences, placement preparation strategies, and insights into corporate expectations. Students gained clarity on skill development, career planning, and real-world challenges.`,
         report: alumni25Report,
       })
