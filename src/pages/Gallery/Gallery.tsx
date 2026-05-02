@@ -24,7 +24,8 @@ import Innovgenius2ndwinner from "../../assets/images/Innovgenius_2nd.png";
 import Innovgenius3rddwinner from "../../assets/images/Innovgenius3rd.png";
 import Preconference from "../../assets/images/pre-conference.png";
 import LocalIV2026 from "../../assets/images/LocalIV.png";
-
+import iic25_2 from "../../assets/images/IIC_2.png";
+import treeplantation from "../../assets/images/treeplantation.png";
 
 const Gallery = () => {
   return (
@@ -50,6 +51,19 @@ const Gallery = () => {
 
           {/* GALLERY GRID */}
           <div className="gallery-grid reveal">
+            <div className="gallery-item">
+  <img src={iic25_2} alt="IIC Event" />
+  <span className="gallery-caption">
+    IIC Workshop – Prototype Development & Innovation
+  </span>
+</div>
+
+<div className="gallery-item">
+  <img src={treeplantation} alt="Tree Plantation" />
+  <span className="gallery-caption">
+    Tree Plantation Drive – Promoting Sustainability at Dream Park
+  </span>
+</div>
             <div className="gallery-item">
   <img src={BestWebsite} alt="" />
   <span className="gallery-caption">

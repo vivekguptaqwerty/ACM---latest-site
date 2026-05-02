@@ -21,6 +21,8 @@ import ACMSummit from "../../assets/images/ACMSummit.png";
 import Preconference from "../../assets/images/pre-conference.png";
 import LocalIV2026 from "../../assets/images/LocalIV.png";
 import ACMrecode from "../../assets/images/Recode.png";
+import iic25_2 from "../../assets/images/IIC_2.png";
+import treeplantation from "../../assets/images/treeplantation.png";
 
 /* ===========================
    REPORT IMPORTS – 2025–26
@@ -121,6 +123,43 @@ const Events = () => {
                <div className="events-grid">
 
   {/* ACM RECODE */}
+
+   <Event
+    img={iic25_2}
+    title="IIC — Institute Innovation Cell"
+    time="16th April 2026"
+    place="TCET"
+    desc="Students were introduced to core principles of prototype creation, including rapid prototyping techniques and iterative design processes."
+    report={iic25Report}
+    onClick={() =>
+      setSelectedEvent({
+        img: iic25_2,
+        title: "IIC — Institute Innovation Cell",
+        time: "16th April 2026",
+        place: "TCET",
+        desc: `Students were introduced to core principles of prototype creation, including rapid prototyping techniques and iterative design processes.`,
+        report: iic25Report,
+      })
+    }
+  />
+  <Event
+  img={treeplantation}
+  title="Tree Plantation Drive"
+  time="18th April 2026"
+  place="Dream Park"
+  desc="A tree plantation drive was organized to promote environmental awareness and sustainability. Students actively participated by planting saplings and learning about the importance of greenery, climate balance, and ecological responsibility."
+  
+  onClick={() =>
+    setSelectedEvent({
+      img: treeplantation,
+      title: "Tree Plantation Drive",
+      time: "18th April 2026",
+      place: "Dream Park",
+      desc: `A tree plantation drive was organized to promote environmental awareness and sustainability. Students actively participated by planting saplings and learning about the importance of greenery, climate balance, and ecological responsibility.`,
+     
+    })
+  }
+/>
   <Event
     img={ACMrecode}
     title="ACM ReCode: Redesign, Rebuild & Reimagine"
@@ -448,7 +487,61 @@ Open to students across colleges.`,
                 </div>
               </div>
             )}
+{activeYear === "2022-23" && (
+  <div className="year-slide active">
+    <div className="events-grid">
 
+      <Event
+        img={bigdata22}
+        title="Big Data & Analytics Workshop"
+        time="12 August 2022"
+        place="Seminar Hall"
+        desc="Hands-on workshop covering fundamentals of big data, Hadoop ecosystem, and real-world analytics applications."
+      />
+
+      <Event
+        img={zephyr22}
+        title="Zephyr 2022 Tech Fest"
+        time="24–25 September 2022"
+        place="TCET Campus"
+        desc="Annual technical fest featuring competitions, coding challenges, and interactive tech-based events."
+      />
+
+      <Event
+        img={blockchain22}
+        title="Blockchain & Web3 Seminar"
+        time="14 October 2022"
+        place="Online"
+        desc="Introduction to blockchain technology, smart contracts, and emerging Web3 applications."
+      />
+
+      <Event
+        img={qualpack22}
+        title="Qualification Pack Workshop"
+        time="9 December 2022"
+        place="Computer Lab"
+        desc="Workshop focused on skill development aligned with industry-recognized qualification standards."
+      />
+
+      <Event
+        img={alumni22}
+        title="Alumni Interaction Session"
+        time="21 January 2023"
+        place="Seminar Hall"
+        desc="Interactive session with alumni sharing career guidance, industry insights, and personal experiences."
+      />
+
+      <Event
+        img={iv22}
+        title="Industrial Visit – Delhi & Nainital"
+        time="18–23 March 2023"
+        place="Delhi & Nainital"
+        desc="Educational tour combining industrial exposure with experiential learning and team-building activities."
+      />
+
+    </div>
+  </div>
+)}
             {/* ===== 2024–25 ===== */}
             {activeYear === "2024-25" && (
               <div className="year-slide active">

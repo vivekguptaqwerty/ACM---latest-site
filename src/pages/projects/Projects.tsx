@@ -8,7 +8,7 @@ import WinnersPixxelhack from "../../assets/images/WinnersPixxelhack.jpeg";
 import BestWebsite from "../../assets/images/Bestwebsiteaward.png";
 import Innovgenius2ndwinner from "../../assets/images/Innovgenius_2nd.png";
 import Innovgenius3rddwinner from "../../assets/images/Innovgenius3rd.png";
-
+import ezinewinner from "../../assets/images/ezinewinners.png";
 type Project = {
   title: string;
   image: string;
@@ -17,6 +17,12 @@ type Project = {
 };
 
 const projects: Project[] = [
+{
+  title: "Third Place - Inter-Department Magazine Presentation",
+  image: ezinewinner,
+  desc: "Secured third place in the Inter-Department Magazine Presentation for showcasing creativity, content quality, and effective presentation of ideas through the departmental e-magazine.",
+  tags: ["Third Place", "Magazine Presentation", "Creative Work"],
+},
   {
   title: "Honourable Mention – Best Website Award (ACM India Council)",
   image: BestWebsite,

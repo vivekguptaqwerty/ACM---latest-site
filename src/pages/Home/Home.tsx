@@ -14,6 +14,7 @@ import e2 from "../../assets/images/ezine.png";
 import e1 from "../../assets/images/IIC.png";
 import e4 from "../../assets/images/ACMSummit.png";
 import e5 from "../../assets/images/innov.png";
+import e6 from "../../assets/images/ezinewinners.png";
 
 
 const Home = () => {
@@ -96,6 +97,7 @@ const Home = () => {
             <img src={e4} alt="ACM Hackathon" />
             <img src={g6} alt="ACM Gallery" />
             <img src={e5} alt="innov" />
+            <img src={e6} alt="ezinewinners" />
           </div>
 
           {/* GROUP 2 (duplicate for seamless loop) */}

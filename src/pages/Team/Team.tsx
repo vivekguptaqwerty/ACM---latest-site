@@ -4,6 +4,7 @@ import "../../styles/global.css";
 import rajesh from "../../assets/images/Rajeshsir.jpeg";
 import mary from "../../assets/images/MaryMAM.jpeg";
 import apeksha from "../../assets/images/Apekshamam.jpeg";
+import archita from "../../assets/images/archita.png";
 
 /* ================= STUDENT IMAGES ================= */
 import vivek from "../../assets/images/Vivek.jpeg";
@@ -35,15 +36,24 @@ const Team = () => {
                 <p className="section-subtitle">
                     The faculty members who guide TCET ACM throughout the academic year.
                 </p>
+                <div className="faculty-grid reveal"   style={{
+    display: "flex",
+    justifyContent: "center",
+    width: "100%"
+  }}>
 
-                <div className="faculty-grid reveal">
-                    <FacultyCard
+                
+ <FacultyCard
+ 
                         img={rajesh}
                         name="Dr. Rajesh Bansode"
                         role="Branch Counsellor IT & Head of Department"
                         highlight
                     />
+                    </div>
 
+                <div className="faculty-grid reveal">
+                   
                     <FacultyCard
                         img={mary}
                         name="Prof. Mary Margarat"
@@ -53,6 +63,11 @@ const Team = () => {
                     <FacultyCard
                         img={apeksha}
                         name="Prof. Apeksha Waghmare"
+                        role="Faculty In-Charge"
+                    />
+                    <FacultyCard
+                        img={archita}
+                        name="Prof. Archita agar"
                         role="Faculty In-Charge"
                     />
                 </div>
